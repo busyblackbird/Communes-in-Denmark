@@ -1,0 +1,2803 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_aba397c530ab437a8008ae9feecf12b4 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_aba397c530ab437a8008ae9feecf12b4" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_aba397c530ab437a8008ae9feecf12b4 = L.map(
+                                  'map_aba397c530ab437a8008ae9feecf12b4',
+                                  {center: [55.670249,10.3333283],
+                                  zoom: 7,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_2481117750cd48138c6d9891902ea241 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+        
+    
+            var circle_marker_230c8acdcde645f0a37613792d9dda39 = L.circleMarker(
+                [55.6867243,12.5700724],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_81936d20112240d1a6dbcfdaa5006111 = L.popup({maxWidth: '300'});
+
+            
+                var html_11aede982f844d44a4d88d1e2ef0f683 = $('<div id="html_11aede982f844d44a4d88d1e2ef0f683" style="width: 100.0%; height: 100.0%;">København Cluster 3</div>')[0];
+                popup_81936d20112240d1a6dbcfdaa5006111.setContent(html_11aede982f844d44a4d88d1e2ef0f683);
+            
+
+            circle_marker_230c8acdcde645f0a37613792d9dda39.bindPopup(popup_81936d20112240d1a6dbcfdaa5006111);
+
+            
+        
+    
+            var circle_marker_09551dbad2394e5f89d07fbd1388304b = L.circleMarker(
+                [56.1496278,10.2134046],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_29924396213e4c149567f32bf41387b5 = L.popup({maxWidth: '300'});
+
+            
+                var html_3b93d1d4944a4c71b4a419a0a68a1d4b = $('<div id="html_3b93d1d4944a4c71b4a419a0a68a1d4b" style="width: 100.0%; height: 100.0%;">Aarhus Cluster 3</div>')[0];
+                popup_29924396213e4c149567f32bf41387b5.setContent(html_3b93d1d4944a4c71b4a419a0a68a1d4b);
+            
+
+            circle_marker_09551dbad2394e5f89d07fbd1388304b.bindPopup(popup_29924396213e4c149567f32bf41387b5);
+
+            
+        
+    
+            var circle_marker_692f1287a8ae49ff8033807f82b5dbd5 = L.circleMarker(
+                [57.0462626,9.9215263],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_8937a2b74a9b442dad7e940a12c97ab8 = L.popup({maxWidth: '300'});
+
+            
+                var html_37f8454bed9544b895a07246b326d793 = $('<div id="html_37f8454bed9544b895a07246b326d793" style="width: 100.0%; height: 100.0%;">Aalborg Cluster 0</div>')[0];
+                popup_8937a2b74a9b442dad7e940a12c97ab8.setContent(html_37f8454bed9544b895a07246b326d793);
+            
+
+            circle_marker_692f1287a8ae49ff8033807f82b5dbd5.bindPopup(popup_8937a2b74a9b442dad7e940a12c97ab8);
+
+            
+        
+    
+            var circle_marker_eadb314c110c48a18ea55bda30668b02 = L.circleMarker(
+                [55.3997225,10.3852104],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_836bd602adbc4c18ae830e38cb07beba = L.popup({maxWidth: '300'});
+
+            
+                var html_4bad78341d084dc684b64892b01bb023 = $('<div id="html_4bad78341d084dc684b64892b01bb023" style="width: 100.0%; height: 100.0%;">Odense Cluster 0</div>')[0];
+                popup_836bd602adbc4c18ae830e38cb07beba.setContent(html_4bad78341d084dc684b64892b01bb023);
+            
+
+            circle_marker_eadb314c110c48a18ea55bda30668b02.bindPopup(popup_836bd602adbc4c18ae830e38cb07beba);
+
+            
+        
+    
+            var circle_marker_2fba42a170014277883dee3dced3502f = L.circleMarker(
+                [55.4664892,8.4520751],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_68f2ab557e6a4d4a8c06882134ef79d6 = L.popup({maxWidth: '300'});
+
+            
+                var html_6a582b679f7c498c9ebd300351d6bd32 = $('<div id="html_6a582b679f7c498c9ebd300351d6bd32" style="width: 100.0%; height: 100.0%;">Esbjerg Cluster 1</div>')[0];
+                popup_68f2ab557e6a4d4a8c06882134ef79d6.setContent(html_6a582b679f7c498c9ebd300351d6bd32);
+            
+
+            circle_marker_2fba42a170014277883dee3dced3502f.bindPopup(popup_68f2ab557e6a4d4a8c06882134ef79d6);
+
+            
+        
+    
+            var circle_marker_fa58bb1edf09448bb71bd643f967d553 = L.circleMarker(
+                [55.7000057,9.5333238],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_2d7e01b635ec45bebd0a3768c48049ae = L.popup({maxWidth: '300'});
+
+            
+                var html_87627c87c2e445b48900ab526dbc1ae0 = $('<div id="html_87627c87c2e445b48900ab526dbc1ae0" style="width: 100.0%; height: 100.0%;">Vejle Cluster 4</div>')[0];
+                popup_2d7e01b635ec45bebd0a3768c48049ae.setContent(html_87627c87c2e445b48900ab526dbc1ae0);
+            
+
+            circle_marker_fa58bb1edf09448bb71bd643f967d553.bindPopup(popup_2d7e01b635ec45bebd0a3768c48049ae);
+
+            
+        
+    
+            var circle_marker_11619b22553b4140a455757cd5cf037d = L.circleMarker(
+                [55.678016,12.5326186],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_89e0dcbc0b6d427785cfee74523b0714 = L.popup({maxWidth: '300'});
+
+            
+                var html_ebbada0cf62f4dba8224bfa0a509dd41 = $('<div id="html_ebbada0cf62f4dba8224bfa0a509dd41" style="width: 100.0%; height: 100.0%;">Frederiksberg Cluster 3</div>')[0];
+                popup_89e0dcbc0b6d427785cfee74523b0714.setContent(html_ebbada0cf62f4dba8224bfa0a509dd41);
+            
+
+            circle_marker_11619b22553b4140a455757cd5cf037d.bindPopup(popup_89e0dcbc0b6d427785cfee74523b0714);
+
+            
+        
+    
+            var circle_marker_ae11175f975a4ad6a8a987cb38b3730f = L.circleMarker(
+                [56.4355428,10.0425957],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_ff57f89fd756402a967ffadd23f6bef1 = L.popup({maxWidth: '300'});
+
+            
+                var html_42b5409f0d3648acbed3210cbd2da623 = $('<div id="html_42b5409f0d3648acbed3210cbd2da623" style="width: 100.0%; height: 100.0%;">Randers Cluster 0</div>')[0];
+                popup_ff57f89fd756402a967ffadd23f6bef1.setContent(html_42b5409f0d3648acbed3210cbd2da623);
+            
+
+            circle_marker_ae11175f975a4ad6a8a987cb38b3730f.bindPopup(popup_ff57f89fd756402a967ffadd23f6bef1);
+
+            
+        
+    
+            var circle_marker_3bb77fa78e2e49889236dcbee91453fc = L.circleMarker(
+                [56.4469128,9.4059354],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_fdc54f3ea25b4dcc98a75a9d282e607c = L.popup({maxWidth: '300'});
+
+            
+                var html_8b866a41571141beb71ba70f9aa54a4a = $('<div id="html_8b866a41571141beb71ba70f9aa54a4a" style="width: 100.0%; height: 100.0%;">Viborg Cluster 0</div>')[0];
+                popup_fdc54f3ea25b4dcc98a75a9d282e607c.setContent(html_8b866a41571141beb71ba70f9aa54a4a);
+            
+
+            circle_marker_3bb77fa78e2e49889236dcbee91453fc.bindPopup(popup_fdc54f3ea25b4dcc98a75a9d282e607c);
+
+            
+        
+    
+            var circle_marker_bbdba26a204f4d31a86c2311a7128b4a = L.circleMarker(
+                [56.169453,9.5495141],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_0b9845d2b6ee44f48dd32efaa59e7aa0 = L.popup({maxWidth: '300'});
+
+            
+                var html_ade4c0b172114867b2de0b236b3bf5c7 = $('<div id="html_ade4c0b172114867b2de0b236b3bf5c7" style="width: 100.0%; height: 100.0%;">Silkeborg Cluster 0</div>')[0];
+                popup_0b9845d2b6ee44f48dd32efaa59e7aa0.setContent(html_ade4c0b172114867b2de0b236b3bf5c7);
+            
+
+            circle_marker_bbdba26a204f4d31a86c2311a7128b4a.bindPopup(popup_0b9845d2b6ee44f48dd32efaa59e7aa0);
+
+            
+        
+    
+            var circle_marker_33db1864056543f1b30d37ae47083187 = L.circleMarker(
+                [55.4894999,9.47905],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_c38f75d3b842400f992f731f7256885c = L.popup({maxWidth: '300'});
+
+            
+                var html_7d575645a2d941f09d11036419b7438f = $('<div id="html_7d575645a2d941f09d11036419b7438f" style="width: 100.0%; height: 100.0%;">Kolding Cluster 4</div>')[0];
+                popup_c38f75d3b842400f992f731f7256885c.setContent(html_7d575645a2d941f09d11036419b7438f);
+            
+
+            circle_marker_33db1864056543f1b30d37ae47083187.bindPopup(popup_c38f75d3b842400f992f731f7256885c);
+
+            
+        
+    
+            var circle_marker_f704c895d15a499d8af6f54f39b9ea40 = L.circleMarker(
+                [55.8611696,9.8444774],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_9ed8a95de8d140bba2e9198c80312471 = L.popup({maxWidth: '300'});
+
+            
+                var html_fba2f7dc28404f998162201267712399 = $('<div id="html_fba2f7dc28404f998162201267712399" style="width: 100.0%; height: 100.0%;">Horsens Cluster 0</div>')[0];
+                popup_9ed8a95de8d140bba2e9198c80312471.setContent(html_fba2f7dc28404f998162201267712399);
+            
+
+            circle_marker_f704c895d15a499d8af6f54f39b9ea40.bindPopup(popup_9ed8a95de8d140bba2e9198c80312471);
+
+            
+        
+    
+            var circle_marker_8ed095b79103448c8f8ff09ac03a53c2 = L.circleMarker(
+                [56.1379757,8.9746623],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_b780838194884f0dbcedda3abb97d0c9 = L.popup({maxWidth: '300'});
+
+            
+                var html_4991bc33ba2f43a7ab313fb57be0851c = $('<div id="html_4991bc33ba2f43a7ab313fb57be0851c" style="width: 100.0%; height: 100.0%;">Herning Cluster 0</div>')[0];
+                popup_b780838194884f0dbcedda3abb97d0c9.setContent(html_4991bc33ba2f43a7ab313fb57be0851c);
+            
+
+            circle_marker_8ed095b79103448c8f8ff09ac03a53c2.bindPopup(popup_b780838194884f0dbcedda3abb97d0c9);
+
+            
+        
+    
+            var circle_marker_d2c81d4ead5842b8af01e16ec65a09c2 = L.circleMarker(
+                [55.6433478,12.0819247],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_806605eb4b554a26936f7a2b662a0db1 = L.popup({maxWidth: '300'});
+
+            
+                var html_f0e938e9585f4b3eb8c1463352acf5f7 = $('<div id="html_f0e938e9585f4b3eb8c1463352acf5f7" style="width: 100.0%; height: 100.0%;">Roskilde Cluster 4</div>')[0];
+                popup_806605eb4b554a26936f7a2b662a0db1.setContent(html_f0e938e9585f4b3eb8c1463352acf5f7);
+            
+
+            circle_marker_d2c81d4ead5842b8af01e16ec65a09c2.bindPopup(popup_806605eb4b554a26936f7a2b662a0db1);
+
+            
+        
+    
+            var circle_marker_f1777a09033646089816aa917537da95 = L.circleMarker(
+                [55.2328252,11.7674102],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_c5d366c9f9f14b6cb0f3c07ea1bab1dd = L.popup({maxWidth: '300'});
+
+            
+                var html_f2d5d020ae20496abc04f252ae0f50a6 = $('<div id="html_f2d5d020ae20496abc04f252ae0f50a6" style="width: 100.0%; height: 100.0%;">Næstved Cluster 1</div>')[0];
+                popup_c5d366c9f9f14b6cb0f3c07ea1bab1dd.setContent(html_f2d5d020ae20496abc04f252ae0f50a6);
+            
+
+            circle_marker_f1777a09033646089816aa917537da95.bindPopup(popup_c5d366c9f9f14b6cb0f3c07ea1bab1dd);
+
+            
+        
+    
+            var circle_marker_508220c7557b453aa01874d4475a843b = L.circleMarker(
+                [55.397636750000004,11.333716594292895],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_b1b1cd9d16b64195addc0e15f3319b34 = L.popup({maxWidth: '300'});
+
+            
+                var html_aac593c9a5ba461bbf79d6571dfd8f52 = $('<div id="html_aac593c9a5ba461bbf79d6571dfd8f52" style="width: 100.0%; height: 100.0%;">Slagelse Cluster 1</div>')[0];
+                popup_b1b1cd9d16b64195addc0e15f3319b34.setContent(html_aac593c9a5ba461bbf79d6571dfd8f52);
+            
+
+            circle_marker_508220c7557b453aa01874d4475a843b.bindPopup(popup_b1b1cd9d16b64195addc0e15f3319b34);
+
+            
+        
+    
+            var circle_marker_2119b0b09a3442488c05864281e7c7a3 = L.circleMarker(
+                [55.7459656,12.5510249],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_050413b80d1d4809837a032eba9ce773 = L.popup({maxWidth: '300'});
+
+            
+                var html_8374ede9946e411fbc6a35e63ba31a07 = $('<div id="html_8374ede9946e411fbc6a35e63ba31a07" style="width: 100.0%; height: 100.0%;">Gentofte Cluster 3</div>')[0];
+                popup_050413b80d1d4809837a032eba9ce773.setContent(html_8374ede9946e411fbc6a35e63ba31a07);
+            
+
+            circle_marker_2119b0b09a3442488c05864281e7c7a3.bindPopup(popup_050413b80d1d4809837a032eba9ce773);
+
+            
+        
+    
+            var circle_marker_98800489b13143b594c80fc2b2beea30 = L.circleMarker(
+                [54.9089186,9.7897999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_91d7b00d0d91428fb59e73bdd92b8c42 = L.popup({maxWidth: '300'});
+
+            
+                var html_6a7c169a9cdc41328987808176b191b5 = $('<div id="html_6a7c169a9cdc41328987808176b191b5" style="width: 100.0%; height: 100.0%;">Sønderborg Cluster 4</div>')[0];
+                popup_91d7b00d0d91428fb59e73bdd92b8c42.setContent(html_6a7c169a9cdc41328987808176b191b5);
+            
+
+            circle_marker_98800489b13143b594c80fc2b2beea30.bindPopup(popup_91d7b00d0d91428fb59e73bdd92b8c42);
+
+            
+        
+    
+            var circle_marker_3da4c65ebd2041229eaada850a82bc9b = L.circleMarker(
+                [55.7186117,11.7135474],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_0578daff28104906bc0b08f86ab346ea = L.popup({maxWidth: '300'});
+
+            
+                var html_7a51a854fae64c788f86644e302834e7 = $('<div id="html_7a51a854fae64c788f86644e302834e7" style="width: 100.0%; height: 100.0%;">Holbæk Cluster 1</div>')[0];
+                popup_0578daff28104906bc0b08f86ab346ea.setContent(html_7a51a854fae64c788f86644e302834e7);
+            
+
+            circle_marker_3da4c65ebd2041229eaada850a82bc9b.bindPopup(popup_0578daff28104906bc0b08f86ab346ea);
+
+            
+        
+    
+            var circle_marker_e5c644fa7655478e87ca3e3f3ed85af4 = L.circleMarker(
+                [55.7383794,12.4696107],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_713d97cfa60f4992ae9ddf0376dd1b67 = L.popup({maxWidth: '300'});
+
+            
+                var html_f3ceb69a7d764382b3a3ee191b030ef3 = $('<div id="html_f3ceb69a7d764382b3a3ee191b030ef3" style="width: 100.0%; height: 100.0%;">Gladsaxe Cluster 3</div>')[0];
+                popup_713d97cfa60f4992ae9ddf0376dd1b67.setContent(html_f3ceb69a7d764382b3a3ee191b030ef3);
+            
+
+            circle_marker_e5c644fa7655478e87ca3e3f3ed85af4.bindPopup(popup_713d97cfa60f4992ae9ddf0376dd1b67);
+
+            
+        
+    
+            var circle_marker_f1320d7332d54b40ab5b0691a6f09332 = L.circleMarker(
+                [57.457183,9.9855998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_096c71329f5a40d6aba58db24ebcbdf6 = L.popup({maxWidth: '300'});
+
+            
+                var html_5a6ed72a057643e18f72a64172e9a6d5 = $('<div id="html_5a6ed72a057643e18f72a64172e9a6d5" style="width: 100.0%; height: 100.0%;">Hjørring Cluster 0</div>')[0];
+                popup_096c71329f5a40d6aba58db24ebcbdf6.setContent(html_5a6ed72a057643e18f72a64172e9a6d5);
+            
+
+            circle_marker_f1320d7332d54b40ab5b0691a6f09332.bindPopup(popup_096c71329f5a40d6aba58db24ebcbdf6);
+
+            
+        
+    
+            var circle_marker_a9b2bc04059b443a87cc00712b368664 = L.circleMarker(
+                [56.0345277,12.6136135],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_d0f24db6eb8c45af86547c6dee61b070 = L.popup({maxWidth: '300'});
+
+            
+                var html_e1fca5b3df704e509c6727c3703e0e77 = $('<div id="html_e1fca5b3df704e509c6727c3703e0e77" style="width: 100.0%; height: 100.0%;">Helsingør Cluster 3</div>')[0];
+                popup_d0f24db6eb8c45af86547c6dee61b070.setContent(html_e1fca5b3df704e509c6727c3703e0e77);
+            
+
+            circle_marker_a9b2bc04059b443a87cc00712b368664.bindPopup(popup_d0f24db6eb8c45af86547c6dee61b070);
+
+            
+        
+    
+            var circle_marker_61b91a683ddc441694681501ab971931 = L.circleMarker(
+                [56.0351868,9.9317878],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_1d26d306467e4162b9c6e4435e1c7837 = L.popup({maxWidth: '300'});
+
+            
+                var html_17d48851e1e543778aafb981b7d7c10f = $('<div id="html_17d48851e1e543778aafb981b7d7c10f" style="width: 100.0%; height: 100.0%;">Skanderborg Cluster 4</div>')[0];
+                popup_1d26d306467e4162b9c6e4435e1c7837.setContent(html_17d48851e1e543778aafb981b7d7c10f);
+            
+
+            circle_marker_61b91a683ddc441694681501ab971931.bindPopup(popup_1d26d306467e4162b9c6e4435e1c7837);
+
+            
+        
+    
+            var circle_marker_cc9c2246f1064e12881164843e118447 = L.circleMarker(
+                [54.79095995,11.825269990321779],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_0ef36d3713d74447968323009b8ba631 = L.popup({maxWidth: '300'});
+
+            
+                var html_977a1c46fe2f4970bc089a6aacca645b = $('<div id="html_977a1c46fe2f4970bc089a6aacca645b" style="width: 100.0%; height: 100.0%;">Guldborgsund Cluster 0</div>')[0];
+                popup_0ef36d3713d74447968323009b8ba631.setContent(html_977a1c46fe2f4970bc089a6aacca645b);
+            
+
+            circle_marker_cc9c2246f1064e12881164843e118447.bindPopup(popup_0ef36d3713d74447968323009b8ba631);
+
+            
+        
+    
+            var circle_marker_4d96d7ccca6949b99155bfdd7d801424 = L.circleMarker(
+                [55.4565009,12.1818964],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_4ae1ef47d0614e40ad35d10f822ddadb = L.popup({maxWidth: '300'});
+
+            
+                var html_61087b91156d40c28d05c22a06443568 = $('<div id="html_61087b91156d40c28d05c22a06443568" style="width: 100.0%; height: 100.0%;">Køge Cluster 1</div>')[0];
+                popup_4ae1ef47d0614e40ad35d10f822ddadb.setContent(html_61087b91156d40c28d05c22a06443568);
+            
+
+            circle_marker_4d96d7ccca6949b99155bfdd7d801424.bindPopup(popup_4ae1ef47d0614e40ad35d10f822ddadb);
+
+            
+        
+    
+            var circle_marker_454ea6d4d31446d9aefcb636dfc7eb18 = L.circleMarker(
+                [57.4412134,10.5336225],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_15c320e698af4056adb330a51d6df11f = L.popup({maxWidth: '300'});
+
+            
+                var html_90a225d93c8541d18d23eebc7c1eb4d7 = $('<div id="html_90a225d93c8541d18d23eebc7c1eb4d7" style="width: 100.0%; height: 100.0%;">Frederikshavn Cluster 4</div>')[0];
+                popup_15c320e698af4056adb330a51d6df11f.setContent(html_90a225d93c8541d18d23eebc7c1eb4d7);
+            
+
+            circle_marker_454ea6d4d31446d9aefcb636dfc7eb18.bindPopup(popup_15c320e698af4056adb330a51d6df11f);
+
+            
+        
+    
+            var circle_marker_3a6edace321b4de78774f6ffb3f49861 = L.circleMarker(
+                [55.0446228,9.4209667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_58875af6426247b285ad51783b595a5e = L.popup({maxWidth: '300'});
+
+            
+                var html_01b74d7005444a65a6418267344e4029 = $('<div id="html_01b74d7005444a65a6418267344e4029" style="width: 100.0%; height: 100.0%;">Aabenraa Cluster 0</div>')[0];
+                popup_58875af6426247b285ad51783b595a5e.setContent(html_01b74d7005444a65a6418267344e4029);
+            
+
+            circle_marker_3a6edace321b4de78774f6ffb3f49861.bindPopup(popup_58875af6426247b285ad51783b595a5e);
+
+            
+        
+    
+            var circle_marker_8f4bf34b84174687b706d40b3a599b32 = L.circleMarker(
+                [55.0636697,10.6082512],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_a7a840c3ed1c4453a9d24284b6b3e4a4 = L.popup({maxWidth: '300'});
+
+            
+                var html_95a1b26d07904c30ab9a46ca1025d655 = $('<div id="html_95a1b26d07904c30ab9a46ca1025d655" style="width: 100.0%; height: 100.0%;">Svendborg Cluster 4</div>')[0];
+                popup_a7a840c3ed1c4453a9d24284b6b3e4a4.setContent(html_95a1b26d07904c30ab9a46ca1025d655);
+            
+
+            circle_marker_8f4bf34b84174687b706d40b3a599b32.bindPopup(popup_a7a840c3ed1c4453a9d24284b6b3e4a4);
+
+            
+        
+    
+            var circle_marker_0a7ea0a70b9f4c66b92aac10a7f65078 = L.circleMarker(
+                [56.3590324,8.6159188],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_d42c2991a22d48059be6f7b37951f888 = L.popup({maxWidth: '300'});
+
+            
+                var html_b8b97be198b94fceb4cf067f98d94c48 = $('<div id="html_b8b97be198b94fceb4cf067f98d94c48" style="width: 100.0%; height: 100.0%;">Holstebro Cluster 1</div>')[0];
+                popup_d42c2991a22d48059be6f7b37951f888.setContent(html_b8b97be198b94fceb4cf067f98d94c48);
+            
+
+            circle_marker_0a7ea0a70b9f4c66b92aac10a7f65078.bindPopup(popup_d42c2991a22d48059be6f7b37951f888);
+
+            
+        
+    
+            var circle_marker_4082a0a2fad7442a8766d27b5e8dfdce = L.circleMarker(
+                [55.8367165,12.485153940503443],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_336496b56dad4bc88f066b221f55acef = L.popup({maxWidth: '300'});
+
+            
+                var html_77cd51efee454b1c8e089c116cc02811 = $('<div id="html_77cd51efee454b1c8e089c116cc02811" style="width: 100.0%; height: 100.0%;">Rudersdal Cluster 4</div>')[0];
+                popup_336496b56dad4bc88f066b221f55acef.setContent(html_77cd51efee454b1c8e089c116cc02811);
+            
+
+            circle_marker_4082a0a2fad7442a8766d27b5e8dfdce.bindPopup(popup_336496b56dad4bc88f066b221f55acef);
+
+            
+        
+    
+            var circle_marker_48c53b3b66df49d382374f65800c35ea = L.circleMarker(
+                [55.2500715,9.4997871],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_ed1ac2b3b9d349ff9ee443cfee72ecc5 = L.popup({maxWidth: '300'});
+
+            
+                var html_f8a58207b3ef4f6baf4a12110f968820 = $('<div id="html_f8a58207b3ef4f6baf4a12110f968820" style="width: 100.0%; height: 100.0%;">Haderslev Cluster 0</div>')[0];
+                popup_ed1ac2b3b9d349ff9ee443cfee72ecc5.setContent(html_f8a58207b3ef4f6baf4a12110f968820);
+            
+
+            circle_marker_48c53b3b66df49d382374f65800c35ea.bindPopup(popup_ed1ac2b3b9d349ff9ee443cfee72ecc5);
+
+            
+        
+    
+            var circle_marker_cd69bb4a159e4e8e880a535a396ebfc5 = L.circleMarker(
+                [55.7718649,12.5051413],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_8b10ac3292514df0a647502074c507af = L.popup({maxWidth: '300'});
+
+            
+                var html_89dcce6d85064ffbbe0240ceb9343346 = $('<div id="html_89dcce6d85064ffbbe0240ceb9343346" style="width: 100.0%; height: 100.0%;">Lyngby-Taarbæk Cluster 3</div>')[0];
+                popup_8b10ac3292514df0a647502074c507af.setContent(html_89dcce6d85064ffbbe0240ceb9343346);
+            
+
+            circle_marker_cd69bb4a159e4e8e880a535a396ebfc5.bindPopup(popup_8b10ac3292514df0a647502074c507af);
+
+            
+        
+    
+            var circle_marker_230195012b35446095877d5ba24d60ac = L.circleMarker(
+                [55.6441712,12.4772091],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_32411c30815843b0aa6c035e053edfb5 = L.popup({maxWidth: '300'});
+
+            
+                var html_0dca963b2c804bdeb18264927c0952cf = $('<div id="html_0dca963b2c804bdeb18264927c0952cf" style="width: 100.0%; height: 100.0%;">Hvidovre Cluster 3</div>')[0];
+                popup_32411c30815843b0aa6c035e053edfb5.setContent(html_0dca963b2c804bdeb18264927c0952cf);
+            
+
+            circle_marker_230195012b35446095877d5ba24d60ac.bindPopup(popup_32411c30815843b0aa6c035e053edfb5);
+
+            
+        
+    
+            var circle_marker_7958295dd9f640dfa814fafcb6773d61 = L.circleMarker(
+                [55.097087,10.2428246],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_6918f95141554648a8e86aeca1f9146f = L.popup({maxWidth: '300'});
+
+            
+                var html_96887e025d10479a99b0bfc3a1c298a6 = $('<div id="html_96887e025d10479a99b0bfc3a1c298a6" style="width: 100.0%; height: 100.0%;">Faaborg-Midtfyn Cluster 4</div>')[0];
+                popup_6918f95141554648a8e86aeca1f9146f.setContent(html_96887e025d10479a99b0bfc3a1c298a6);
+            
+
+            circle_marker_7958295dd9f640dfa814fafcb6773d61.bindPopup(popup_6918f95141554648a8e86aeca1f9146f);
+
+            
+        
+    
+            var circle_marker_6843f5ad319f4042aa1e8331d050985e = L.circleMarker(
+                [55.565268,9.7562169],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_7429f63d339c492e8ed5c32b9f7296fc = L.popup({maxWidth: '300'});
+
+            
+                var html_3906a045c2e14a7abcc198de3edb6bd1 = $('<div id="html_3906a045c2e14a7abcc198de3edb6bd1" style="width: 100.0%; height: 100.0%;">Fredericia Cluster 4</div>')[0];
+                popup_7429f63d339c492e8ed5c32b9f7296fc.setContent(html_3906a045c2e14a7abcc198de3edb6bd1);
+            
+
+            circle_marker_6843f5ad319f4042aa1e8331d050985e.bindPopup(popup_7429f63d339c492e8ed5c32b9f7296fc);
+
+            
+        
+    
+            var circle_marker_4358fa457ab241b293476c1e2f4a4cad = L.circleMarker(
+                [55.9285735,12.3063909],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_9b6b383bc27843ffbf2281d7116e7633 = L.popup({maxWidth: '300'});
+
+            
+                var html_c5f49ecede02444aa4921a97b0f1a425 = $('<div id="html_c5f49ecede02444aa4921a97b0f1a425" style="width: 100.0%; height: 100.0%;">Hillerød Cluster 1</div>')[0];
+                popup_9b6b383bc27843ffbf2281d7116e7633.setContent(html_c5f49ecede02444aa4921a97b0f1a425);
+            
+
+            circle_marker_4358fa457ab241b293476c1e2f4a4cad.bindPopup(popup_9b6b383bc27843ffbf2281d7116e7633);
+
+            
+        
+    
+            var circle_marker_9d94f416865741c1887ccc064a81a795 = L.circleMarker(
+                [55.656548799999996,12.243321024652472],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_f534c513a7af4d80bf9c62014c233033 = L.popup({maxWidth: '300'});
+
+            
+                var html_ea7a8ff7a7db48d6b0595258555412fb = $('<div id="html_ea7a8ff7a7db48d6b0595258555412fb" style="width: 100.0%; height: 100.0%;">Høje-Taastrup Cluster 0</div>')[0];
+                popup_f534c513a7af4d80bf9c62014c233033.setContent(html_ea7a8ff7a7db48d6b0595258555412fb);
+            
+
+            circle_marker_9d94f416865741c1887ccc064a81a795.bindPopup(popup_f534c513a7af4d80bf9c62014c233033);
+
+            
+        
+    
+            var circle_marker_f71da3fca16d4600a8ff68c8d038f3eb = L.circleMarker(
+                [55.5833746,12.2999286],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_44edddeaec4a446fb2b8be97306d5609 = L.popup({maxWidth: '300'});
+
+            
+                var html_b6087e6ca8a64c67b4574f0fee1f5937 = $('<div id="html_b6087e6ca8a64c67b4574f0fee1f5937" style="width: 100.0%; height: 100.0%;">Greve Cluster 1</div>')[0];
+                popup_44edddeaec4a446fb2b8be97306d5609.setContent(html_b6087e6ca8a64c67b4574f0fee1f5937);
+            
+
+            circle_marker_f71da3fca16d4600a8ff68c8d038f3eb.bindPopup(popup_44edddeaec4a446fb2b8be97306d5609);
+
+            
+        
+    
+            var circle_marker_bb4baa6949324bcfae26e0c9360734df = L.circleMarker(
+                [55.6176702,8.4811757],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_e14ea3af1bce4ddbae6e15aca4d40f31 = L.popup({maxWidth: '300'});
+
+            
+                var html_a734c5ab2ddb4eb9af2b73dcc91e7d2f = $('<div id="html_a734c5ab2ddb4eb9af2b73dcc91e7d2f" style="width: 100.0%; height: 100.0%;">Varde Cluster 0</div>')[0];
+                popup_e14ea3af1bce4ddbae6e15aca4d40f31.setContent(html_a734c5ab2ddb4eb9af2b73dcc91e7d2f);
+            
+
+            circle_marker_bb4baa6949324bcfae26e0c9360734df.bindPopup(popup_e14ea3af1bce4ddbae6e15aca4d40f31);
+
+            
+        
+    
+            var circle_marker_17491f2a640841849429dc2e43084e9c = L.circleMarker(
+                [55.7303589,12.3612313],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_65d579015f064446b0518bebfb35305f = L.popup({maxWidth: '300'});
+
+            
+                var html_dbe94ba1c7e64db692d44c179091b83f = $('<div id="html_dbe94ba1c7e64db692d44c179091b83f" style="width: 100.0%; height: 100.0%;">Ballerup Cluster 0</div>')[0];
+                popup_65d579015f064446b0518bebfb35305f.setContent(html_dbe94ba1c7e64db692d44c179091b83f);
+            
+
+            circle_marker_17491f2a640841849429dc2e43084e9c.bindPopup(popup_65d579015f064446b0518bebfb35305f);
+
+            
+        
+    
+            var circle_marker_b7aa8008c1ba455f83d0f8385bd9e31f = L.circleMarker(
+                [56.336432849999994,9.99090725],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_b3996b32b4a046be9d0f2c9371a2027b = L.popup({maxWidth: '300'});
+
+            
+                var html_3f83a0b937f646fcb0e6184f3183662b = $('<div id="html_3f83a0b937f646fcb0e6184f3183662b" style="width: 100.0%; height: 100.0%;">Favrskov Cluster 1</div>')[0];
+                popup_b3996b32b4a046be9d0f2c9371a2027b.setContent(html_3f83a0b937f646fcb0e6184f3183662b);
+            
+
+            circle_marker_b7aa8008c1ba455f83d0f8385bd9e31f.bindPopup(popup_b3996b32b4a046be9d0f2c9371a2027b);
+
+            
+        
+    
+            var circle_marker_c7bd89bacce545a3b423a7bdc035c2de = L.circleMarker(
+                [55.7705233,9.6994255],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_73369f6bb151408087ce166eff4723cb = L.popup({maxWidth: '300'});
+
+            
+                var html_99f27afe00514a60b5414c3525e41d89 = $('<div id="html_99f27afe00514a60b5414c3525e41d89" style="width: 100.0%; height: 100.0%;">Hedensted Cluster 0</div>')[0];
+                popup_73369f6bb151408087ce166eff4723cb.setContent(html_99f27afe00514a60b5414c3525e41d89);
+            
+
+            circle_marker_c7bd89bacce545a3b423a7bdc035c2de.bindPopup(popup_73369f6bb151408087ce166eff4723cb);
+
+            
+        
+    
+            var circle_marker_001557d6314e4ea7b7f3064abc691e08 = L.circleMarker(
+                [55.8417752,12.063595],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_88071872f1ce45cc804c2217237a3ac2 = L.popup({maxWidth: '300'});
+
+            
+                var html_62e6e58c3bcb448e952bc6b3853dbe75 = $('<div id="html_62e6e58c3bcb448e952bc6b3853dbe75" style="width: 100.0%; height: 100.0%;">Frederikssund Cluster 1</div>')[0];
+                popup_88071872f1ce45cc804c2217237a3ac2.setContent(html_62e6e58c3bcb448e952bc6b3853dbe75);
+            
+
+            circle_marker_001557d6314e4ea7b7f3064abc691e08.bindPopup(popup_88071872f1ce45cc804c2217237a3ac2);
+
+            
+        
+    
+            var circle_marker_240816c9e736415489931b041cc51cd6 = L.circleMarker(
+                [55.7797855,12.1854997],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_8aada11cdd9b4e2ea0ef41bb6063f4ec = L.popup({maxWidth: '300'});
+
+            
+                var html_cf9ffd3d173c4ed89e8005be3b94d1ed = $('<div id="html_cf9ffd3d173c4ed89e8005be3b94d1ed" style="width: 100.0%; height: 100.0%;">Egedal Cluster 1</div>')[0];
+                popup_8aada11cdd9b4e2ea0ef41bb6063f4ec.setContent(html_cf9ffd3d173c4ed89e8005be3b94d1ed);
+            
+
+            circle_marker_240816c9e736415489931b041cc51cd6.bindPopup(popup_8aada11cdd9b4e2ea0ef41bb6063f4ec);
+
+            
+        
+    
+            var circle_marker_ffe3f8a1e34f44b2bba993f01b593dbe = L.circleMarker(
+                [55.6281838,12.5997628],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_64527b673eab4d72ae35b5f978ea4ab4 = L.popup({maxWidth: '300'});
+
+            
+                var html_9de7e68e336d4da3b38e8419af424e8f = $('<div id="html_9de7e68e336d4da3b38e8419af424e8f" style="width: 100.0%; height: 100.0%;">Tårnby Cluster 3</div>')[0];
+                popup_64527b673eab4d72ae35b5f978ea4ab4.setContent(html_9de7e68e336d4da3b38e8419af424e8f);
+            
+
+            circle_marker_ffe3f8a1e34f44b2bba993f01b593dbe.bindPopup(popup_64527b673eab4d72ae35b5f978ea4ab4);
+
+            
+        
+    
+            var circle_marker_58d548f588d94edeb2790a45b8c87531 = L.circleMarker(
+                [55.4743417,9.1317951],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_c9ef40b0ac014dd7b90b84e4a8f283c8 = L.popup({maxWidth: '300'});
+
+            
+                var html_fd5893c8497947ff8f217e2aa36d5770 = $('<div id="html_fd5893c8497947ff8f217e2aa36d5770" style="width: 100.0%; height: 100.0%;">Vejen Cluster 1</div>')[0];
+                popup_c9ef40b0ac014dd7b90b84e4a8f283c8.setContent(html_fd5893c8497947ff8f217e2aa36d5770);
+            
+
+            circle_marker_58d548f588d94edeb2790a45b8c87531.bindPopup(popup_c9ef40b0ac014dd7b90b84e4a8f283c8);
+
+            
+        
+    
+            var circle_marker_04c6f5d85b3b4903b489a5c6799e116b = L.circleMarker(
+                [56.27146895,10.662949515014887],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_be0329e246f14dd6bdf66b83485bbe3f = L.popup({maxWidth: '300'});
+
+            
+                var html_e7fe6114c75b4a1b8871ddd739514d74 = $('<div id="html_e7fe6114c75b4a1b8871ddd739514d74" style="width: 100.0%; height: 100.0%;">Syddjurs Cluster 4</div>')[0];
+                popup_be0329e246f14dd6bdf66b83485bbe3f.setContent(html_e7fe6114c75b4a1b8871ddd739514d74);
+            
+
+            circle_marker_04c6f5d85b3b4903b489a5c6799e116b.bindPopup(popup_be0329e246f14dd6bdf66b83485bbe3f);
+
+            
+        
+    
+            var circle_marker_75330cbfa11d43159c00ccc3838a373f = L.circleMarker(
+                [56.1390178,9.1547931],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_5442c10aade74d7ea75ce870764c7d1f = L.popup({maxWidth: '300'});
+
+            
+                var html_47328cab570f41ff95a85a72666a6c14 = $('<div id="html_47328cab570f41ff95a85a72666a6c14" style="width: 100.0%; height: 100.0%;">Ikast-Brande Cluster 1</div>')[0];
+                popup_5442c10aade74d7ea75ce870764c7d1f.setContent(html_47328cab570f41ff95a85a72666a6c14);
+            
+
+            circle_marker_75330cbfa11d43159c00ccc3838a373f.bindPopup(popup_5442c10aade74d7ea75ce870764c7d1f);
+
+            
+        
+    
+            var circle_marker_87733d1294cb4c73a6e1f2d8968b67e9 = L.circleMarker(
+                [55.265798,9.9002174],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_10b65b69560b480789bfc24e57e20d4b = L.popup({maxWidth: '300'});
+
+            
+                var html_9034d615173d4a5bbb5addea7163d677 = $('<div id="html_9034d615173d4a5bbb5addea7163d677" style="width: 100.0%; height: 100.0%;">Assens Cluster 4</div>')[0];
+                popup_10b65b69560b480789bfc24e57e20d4b.setContent(html_9034d615173d4a5bbb5addea7163d677);
+            
+
+            circle_marker_87733d1294cb4c73a6e1f2d8968b67e9.bindPopup(popup_10b65b69560b480789bfc24e57e20d4b);
+
+            
+        
+    
+            var circle_marker_22c9c9c8ec8a445f8e9b9a4a68f1e650 = L.circleMarker(
+                [56.0032695,12.291315398386567],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_f33322f942f8467fae6633aaaa24c6b1 = L.popup({maxWidth: '300'});
+
+            
+                var html_3ec6b53961a7442891e047e7eedcef73 = $('<div id="html_3ec6b53961a7442891e047e7eedcef73" style="width: 100.0%; height: 100.0%;">Gribskov Cluster 1</div>')[0];
+                popup_f33322f942f8467fae6633aaaa24c6b1.setContent(html_3ec6b53961a7442891e047e7eedcef73);
+            
+
+            circle_marker_22c9c9c8ec8a445f8e9b9a4a68f1e650.bindPopup(popup_f33322f942f8467fae6633aaaa24c6b1);
+
+            
+        
+    
+            var circle_marker_e27df969b51b4322b21ba04ab4089052 = L.circleMarker(
+                [55.80105015,12.40902671807886],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_f477683146604a47b1611deda545e356 = L.popup({maxWidth: '300'});
+
+            
+                var html_320648b237404f1aa04c665de00a41e8 = $('<div id="html_320648b237404f1aa04c665de00a41e8" style="width: 100.0%; height: 100.0%;">Furesø Cluster 0</div>')[0];
+                popup_f477683146604a47b1611deda545e356.setContent(html_320648b237404f1aa04c665de00a41e8);
+            
+
+            circle_marker_e27df969b51b4322b21ba04ab4089052.bindPopup(popup_f477683146604a47b1611deda545e356);
+
+            
+        
+    
+            var circle_marker_c54b7452fdbb4097a47595bb8a198bc4 = L.circleMarker(
+                [55.9821565,12.395091144755735],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_9a88bc25e1c14941849938858fb97c7c = L.popup({maxWidth: '300'});
+
+            
+                var html_ee6c5ee3054d4b948520a83620d4cd78 = $('<div id="html_ee6c5ee3054d4b948520a83620d4cd78" style="width: 100.0%; height: 100.0%;">Fredensborg Cluster 1</div>')[0];
+                popup_9a88bc25e1c14941849938858fb97c7c.setContent(html_ee6c5ee3054d4b948520a83620d4cd78);
+            
+
+            circle_marker_c54b7452fdbb4097a47595bb8a198bc4.bindPopup(popup_9a88bc25e1c14941849938858fb97c7c);
+
+            
+        
+    
+            var circle_marker_6ffc814a1d8f45d1bb70876d94e1ef81 = L.circleMarker(
+                [55.6812495,12.4547294],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_e63c3af9fb5949d09ede4e4b458fb6fa = L.popup({maxWidth: '300'});
+
+            
+                var html_0022bf66b2d04594a45bbeca2c717e09 = $('<div id="html_0022bf66b2d04594a45bbeca2c717e09" style="width: 100.0%; height: 100.0%;">Rødovre Cluster 3</div>')[0];
+                popup_e63c3af9fb5949d09ede4e4b458fb6fa.setContent(html_0022bf66b2d04594a45bbeca2c717e09);
+            
+
+            circle_marker_6ffc814a1d8f45d1bb70876d94e1ef81.bindPopup(popup_e63c3af9fb5949d09ede4e4b458fb6fa);
+
+            
+        
+    
+            var circle_marker_e843139d06404451b6e80af075395a15 = L.circleMarker(
+                [55.143205449999996,14.922572149451753],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_f5af3fc6a7a743199fa6f0477e8012e8 = L.popup({maxWidth: '300'});
+
+            
+                var html_140169865792401d83dccbf7299836f9 = $('<div id="html_140169865792401d83dccbf7299836f9" style="width: 100.0%; height: 100.0%;">Bornholm Cluster 4</div>')[0];
+                popup_f5af3fc6a7a743199fa6f0477e8012e8.setContent(html_140169865792401d83dccbf7299836f9);
+            
+
+            circle_marker_e843139d06404451b6e80af075395a15.bindPopup(popup_f5af3fc6a7a743199fa6f0477e8012e8);
+
+            
+        
+    
+            var circle_marker_e45b32dbaf3c40669de0290e2acd8e6b = L.circleMarker(
+                [55.4470245,9.93699440734142],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_b692974252d84b8eb60b05ca6aa6ce24 = L.popup({maxWidth: '300'});
+
+            
+                var html_a521fbf743bf45ebb9e748388544e57f = $('<div id="html_a521fbf743bf45ebb9e748388544e57f" style="width: 100.0%; height: 100.0%;">Middelfart Cluster 1</div>')[0];
+                popup_b692974252d84b8eb60b05ca6aa6ce24.setContent(html_a521fbf743bf45ebb9e748388544e57f);
+            
+
+            circle_marker_e45b32dbaf3c40669de0290e2acd8e6b.bindPopup(popup_b692974252d84b8eb60b05ca6aa6ce24);
+
+            
+        
+    
+            var circle_marker_59f6e0012e81453e82eb4d6a139daa72 = L.circleMarker(
+                [56.4511784,10.60868882625472],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_db6ac84df18a4601b96097a59621fe87 = L.popup({maxWidth: '300'});
+
+            
+                var html_43ea69a5d64540e2a4749451bc43e3a3 = $('<div id="html_43ea69a5d64540e2a4749451bc43e3a3" style="width: 100.0%; height: 100.0%;">Norddjurs Cluster 2</div>')[0];
+                popup_db6ac84df18a4601b96097a59621fe87.setContent(html_43ea69a5d64540e2a4749451bc43e3a3);
+            
+
+            circle_marker_59f6e0012e81453e82eb4d6a139daa72.bindPopup(popup_db6ac84df18a4601b96097a59621fe87);
+
+            
+        
+    
+            var circle_marker_f3bf6d0251bd47b19275414a299103f8 = L.circleMarker(
+                [54.9395925,8.860309221520497],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_d601f76f596f4c3f9ca4b44b557b7454 = L.popup({maxWidth: '300'});
+
+            
+                var html_b67077c4a2ee406aade384ef29f6bf78 = $('<div id="html_b67077c4a2ee406aade384ef29f6bf78" style="width: 100.0%; height: 100.0%;">Tønder Cluster 0</div>')[0];
+                popup_d601f76f596f4c3f9ca4b44b557b7454.setContent(html_b67077c4a2ee406aade384ef29f6bf78);
+            
+
+            circle_marker_f3bf6d0251bd47b19275414a299103f8.bindPopup(popup_d601f76f596f4c3f9ca4b44b557b7454);
+
+            
+        
+    
+            var circle_marker_8a0b3233ccea4affb407d61f1dc2b16e = L.circleMarker(
+                [55.25592915,12.111935854483317],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_b8c57908e5a54831a293ecc0f8fbfd9e = L.popup({maxWidth: '300'});
+
+            
+                var html_e00bff206570446881653959afe16d89 = $('<div id="html_e00bff206570446881653959afe16d89" style="width: 100.0%; height: 100.0%;">Faxe Cluster 4</div>')[0];
+                popup_b8c57908e5a54831a293ecc0f8fbfd9e.setContent(html_e00bff206570446881653959afe16d89);
+            
+
+            circle_marker_8a0b3233ccea4affb407d61f1dc2b16e.bindPopup(popup_b8c57908e5a54831a293ecc0f8fbfd9e);
+
+            
+        
+    
+            var circle_marker_a549c8b8929743089ae9f5aac2f69a0c = L.circleMarker(
+                [57.2700129,9.9448631],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_ccf291f29b8c4969a333d1793292df23 = L.popup({maxWidth: '300'});
+
+            
+                var html_035f25037b164e10be5b5c2490115bda = $('<div id="html_035f25037b164e10be5b5c2490115bda" style="width: 100.0%; height: 100.0%;">Brønderslev Cluster 4</div>')[0];
+                popup_ccf291f29b8c4969a333d1793292df23.setContent(html_035f25037b164e10be5b5c2490115bda);
+            
+
+            circle_marker_a549c8b8929743089ae9f5aac2f69a0c.bindPopup(popup_ccf291f29b8c4969a333d1793292df23);
+
+            
+        
+    
+            var circle_marker_7d0dd843d4be47d48e9987edbe2a0020 = L.circleMarker(
+                [55.644111,12.4217135],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_d7ea046cca944c7b92b81203ff2436ba = L.popup({maxWidth: '300'});
+
+            
+                var html_07bb1cc1c1ff43b4b5961af0a2cf8653 = $('<div id="html_07bb1cc1c1ff43b4b5961af0a2cf8653" style="width: 100.0%; height: 100.0%;">Brøndby Cluster 3</div>')[0];
+                popup_d7ea046cca944c7b92b81203ff2436ba.setContent(html_07bb1cc1c1ff43b4b5961af0a2cf8653);
+            
+
+            circle_marker_7d0dd843d4be47d48e9987edbe2a0020.bindPopup(popup_d7ea046cca944c7b92b81203ff2436ba);
+
+            
+        
+    
+            var circle_marker_0dc7bbbe84ef445d9df913e2ef2e5b26 = L.circleMarker(
+                [55.446817,11.7975218],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_0387feb6c2ca4d7b8a6b82c76013b154 = L.popup({maxWidth: '300'});
+
+            
+                var html_f6dccc3e84db461da4fdae97e1de6bd6 = $('<div id="html_f6dccc3e84db461da4fdae97e1de6bd6" style="width: 100.0%; height: 100.0%;">Ringsted Cluster 1</div>')[0];
+                popup_0387feb6c2ca4d7b8a6b82c76013b154.setContent(html_f6dccc3e84db461da4fdae97e1de6bd6);
+            
+
+            circle_marker_0dc7bbbe84ef445d9df913e2ef2e5b26.bindPopup(popup_0387feb6c2ca4d7b8a6b82c76013b154);
+
+            
+        
+    
+            var circle_marker_463770f5db2043d3a392ffb1376522e7 = L.circleMarker(
+                [55.8717715,11.607236693553508],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_01ec741ef6fa40998446858c4555f7e2 = L.popup({maxWidth: '300'});
+
+            
+                var html_e416215337f24e8e8c393138a2b4a3b8 = $('<div id="html_e416215337f24e8e8c393138a2b4a3b8" style="width: 100.0%; height: 100.0%;">Odsherred Cluster 1</div>')[0];
+                popup_01ec741ef6fa40998446858c4555f7e2.setContent(html_e416215337f24e8e8c393138a2b4a3b8);
+            
+
+            circle_marker_463770f5db2043d3a392ffb1376522e7.bindPopup(popup_01ec741ef6fa40998446858c4555f7e2);
+
+            
+        
+    
+            var circle_marker_36bf5e7f98ba465d80d63f6477b0e6ed = L.circleMarker(
+                [55.3098281,10.7976604],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_e63e417fc3fd4112968488c11715247e = L.popup({maxWidth: '300'});
+
+            
+                var html_5c33f6cc6c3b4936af710b8e9d9957b7 = $('<div id="html_5c33f6cc6c3b4936af710b8e9d9957b7" style="width: 100.0%; height: 100.0%;">Nyborg Cluster 4</div>')[0];
+                popup_e63e417fc3fd4112968488c11715247e.setContent(html_5c33f6cc6c3b4936af710b8e9d9957b7);
+            
+
+            circle_marker_36bf5e7f98ba465d80d63f6477b0e6ed.bindPopup(popup_e63e417fc3fd4112968488c11715247e);
+
+            
+        
+    
+            var circle_marker_64d55d598f3343ee9f8feabf24e99153 = L.circleMarker(
+                [55.9547901,11.897637594899628],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_54c41653689545bea3980a3c6edc8fb4 = L.popup({maxWidth: '300'});
+
+            
+                var html_c930043351834db9b86884174063bfb7 = $('<div id="html_c930043351834db9b86884174063bfb7" style="width: 100.0%; height: 100.0%;">Halsnæs Cluster 1</div>')[0];
+                popup_54c41653689545bea3980a3c6edc8fb4.setContent(html_c930043351834db9b86884174063bfb7);
+            
+
+            circle_marker_64d55d598f3343ee9f8feabf24e99153.bindPopup(popup_54c41653689545bea3980a3c6edc8fb4);
+
+            
+        
+    
+            var circle_marker_a7216ebc550e4892ad28b358a1988756 = L.circleMarker(
+                [56.83235445,9.849713578674315],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_9eb1ce951a47478bba2c167f914f0da4 = L.popup({maxWidth: '300'});
+
+            
+                var html_a2e7143005bc4392aa1673ebb74fd1ba = $('<div id="html_a2e7143005bc4392aa1673ebb74fd1ba" style="width: 100.0%; height: 100.0%;">Rebild Cluster 4</div>')[0];
+                popup_9eb1ce951a47478bba2c167f914f0da4.setContent(html_a2e7143005bc4392aa1673ebb74fd1ba);
+            
+
+            circle_marker_a7216ebc550e4892ad28b358a1988756.bindPopup(popup_9eb1ce951a47478bba2c167f914f0da4);
+
+            
+        
+    
+            var circle_marker_8f1207c8ed4e4a09addef94bf13bbf82 = L.circleMarker(
+                [55.4365822,11.5629363],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_6ea6a45c0f76479cad46a64532502cdb = L.popup({maxWidth: '300'});
+
+            
+                var html_ba06a482a5ce4925a3acd8bb19ae6523 = $('<div id="html_ba06a482a5ce4925a3acd8bb19ae6523" style="width: 100.0%; height: 100.0%;">Sorø Cluster 1</div>')[0];
+                popup_6ea6a45c0f76479cad46a64532502cdb.setContent(html_ba06a482a5ce4925a3acd8bb19ae6523);
+            
+
+            circle_marker_8f1207c8ed4e4a09addef94bf13bbf82.bindPopup(popup_6ea6a45c0f76479cad46a64532502cdb);
+
+            
+        
+    
+            var circle_marker_49c283132f6f4385b3a76dd439550fa2 = L.circleMarker(
+                [55.733700600000006,12.429451266362797],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_46d29115428f4f72b4de407341e1e87b = L.popup({maxWidth: '300'});
+
+            
+                var html_f8355ee61f814c619d61e58de4537db6 = $('<div id="html_f8355ee61f814c619d61e58de4537db6" style="width: 100.0%; height: 100.0%;">Herlev Cluster 3</div>')[0];
+                popup_46d29115428f4f72b4de407341e1e87b.setContent(html_f8355ee61f814c619d61e58de4537db6);
+            
+
+            circle_marker_49c283132f6f4385b3a76dd439550fa2.bindPopup(popup_46d29115428f4f72b4de407341e1e87b);
+
+            
+        
+    
+            var circle_marker_dc27d7c4e65e49b8a18f246c905df281 = L.circleMarker(
+                [55.6586018,12.3562849],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_ca607e6441f24151b6124e6d28bb60c5 = L.popup({maxWidth: '300'});
+
+            
+                var html_a48e6e3e159742c6926026a6d4a38a3c = $('<div id="html_a48e6e3e159742c6926026a6d4a38a3c" style="width: 100.0%; height: 100.0%;">Albertslund Cluster 0</div>')[0];
+                popup_ca607e6441f24151b6124e6d28bb60c5.setContent(html_a48e6e3e159742c6926026a6d4a38a3c);
+            
+
+            circle_marker_dc27d7c4e65e49b8a18f246c905df281.bindPopup(popup_ca607e6441f24151b6124e6d28bb60c5);
+
+            
+        
+    
+            var circle_marker_e1b15b8a8dc54f228b9fcc74fd1dce25 = L.circleMarker(
+                [55.6043432,11.9737103],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_e9ebff9d52e14b27b8424ed863e536aa = L.popup({maxWidth: '300'});
+
+            
+                var html_53632da17edb4768b09032dbabc6b842 = $('<div id="html_53632da17edb4768b09032dbabc6b842" style="width: 100.0%; height: 100.0%;">Lejre Cluster 1</div>')[0];
+                popup_e9ebff9d52e14b27b8424ed863e536aa.setContent(html_53632da17edb4768b09032dbabc6b842);
+            
+
+            circle_marker_e1b15b8a8dc54f228b9fcc74fd1dce25.bindPopup(popup_e9ebff9d52e14b27b8424ed863e536aa);
+
+            
+        
+    
+            var circle_marker_ea258a5b521449a69eaedb188083fd78 = L.circleMarker(
+                [55.7309428,9.1159357],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_8ee15f86230242e9a071eb0ab7779e75 = L.popup({maxWidth: '300'});
+
+            
+                var html_8e3ad3f59836431fbfb41b50edca277e = $('<div id="html_8e3ad3f59836431fbfb41b50edca277e" style="width: 100.0%; height: 100.0%;">Billund Cluster 2</div>')[0];
+                popup_8ee15f86230242e9a071eb0ab7779e75.setContent(html_8e3ad3f59836431fbfb41b50edca277e);
+            
+
+            circle_marker_ea258a5b521449a69eaedb188083fd78.bindPopup(popup_8ee15f86230242e9a071eb0ab7779e75);
+
+            
+        
+    
+            var circle_marker_10f74685618647ddb093368dcb8b8bfe = L.circleMarker(
+                [55.8707776,12.3556762],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_37e55efc636c4ea6bdb3efdd12b291f1 = L.popup({maxWidth: '300'});
+
+            
+                var html_62a7bd5f870b4dd494770b3e045e28ea = $('<div id="html_62a7bd5f870b4dd494770b3e045e28ea" style="width: 100.0%; height: 100.0%;">Allerød Cluster 1</div>')[0];
+                popup_37e55efc636c4ea6bdb3efdd12b291f1.setContent(html_62a7bd5f870b4dd494770b3e045e28ea);
+            
+
+            circle_marker_10f74685618647ddb093368dcb8b8bfe.bindPopup(popup_37e55efc636c4ea6bdb3efdd12b291f1);
+
+            
+        
+    
+            var circle_marker_06494235d0fb44a39056f151fa78553e = L.circleMarker(
+                [55.8832986,12.5000112],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_50f34e5d6f0f40e3a76e5e1d54e1155e = L.popup({maxWidth: '300'});
+
+            
+                var html_8a98d37c0fa24b77a6d4ac1b2721de5a = $('<div id="html_8a98d37c0fa24b77a6d4ac1b2721de5a" style="width: 100.0%; height: 100.0%;">Hørsholm Cluster 1</div>')[0];
+                popup_50f34e5d6f0f40e3a76e5e1d54e1155e.setContent(html_8a98d37c0fa24b77a6d4ac1b2721de5a);
+            
+
+            circle_marker_06494235d0fb44a39056f151fa78553e.bindPopup(popup_50f34e5d6f0f40e3a76e5e1d54e1155e);
+
+            
+        
+    
+            var circle_marker_cb065503e23e4c5b9076bc21f805da6a = L.circleMarker(
+                [55.4532771,10.6547783],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_9d62c3187b784f2491e3ffe1b9a21b1c = L.popup({maxWidth: '300'});
+
+            
+                var html_1a9b28083e1a42cdaf0956d4edf5d49c = $('<div id="html_1a9b28083e1a42cdaf0956d4edf5d49c" style="width: 100.0%; height: 100.0%;">Kerteminde Cluster 4</div>')[0];
+                popup_9d62c3187b784f2491e3ffe1b9a21b1c.setContent(html_1a9b28083e1a42cdaf0956d4edf5d49c);
+            
+
+            circle_marker_cb065503e23e4c5b9076bc21f805da6a.bindPopup(popup_9d62c3187b784f2491e3ffe1b9a21b1c);
+
+            
+        
+    
+            var circle_marker_3acf8629f0c443f5834ecefaedcf766e = L.circleMarker(
+                [55.537527850000004,12.169616752371903],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_62f4a316e37b488387b059c05532f14f = L.popup({maxWidth: '300'});
+
+            
+                var html_788fb7be50ca468ba2dc07a9e49060fd = $('<div id="html_788fb7be50ca468ba2dc07a9e49060fd" style="width: 100.0%; height: 100.0%;">Solrød Cluster 1</div>')[0];
+                popup_62f4a316e37b488387b059c05532f14f.setContent(html_788fb7be50ca468ba2dc07a9e49060fd);
+            
+
+            circle_marker_3acf8629f0c443f5834ecefaedcf766e.bindPopup(popup_62f4a316e37b488387b059c05532f14f);
+
+            
+        
+    
+            var circle_marker_22eaea17675c486691247d7cfd690db0 = L.circleMarker(
+                [55.6094468,12.3582555],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_d882492514d147a58d50e91bc3631ec0 = L.popup({maxWidth: '300'});
+
+            
+                var html_84212374489e4f5f87bd44a8eed84785 = $('<div id="html_84212374489e4f5f87bd44a8eed84785" style="width: 100.0%; height: 100.0%;">Ishøj Cluster 0</div>')[0];
+                popup_d882492514d147a58d50e91bc3631ec0.setContent(html_84212374489e4f5f87bd44a8eed84785);
+            
+
+            circle_marker_22eaea17675c486691247d7cfd690db0.bindPopup(popup_d882492514d147a58d50e91bc3631ec0);
+
+            
+        
+    
+            var circle_marker_76b20dbd66e6489680cf1649f6d48e15 = L.circleMarker(
+                [55.255478,12.382478],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_d9ebb2b4aa964f8abaf54f978534a123 = L.popup({maxWidth: '300'});
+
+            
+                var html_732882724ad84ddb93fa111aa703536f = $('<div id="html_732882724ad84ddb93fa111aa703536f" style="width: 100.0%; height: 100.0%;">Stevns Cluster 4</div>')[0];
+                popup_d9ebb2b4aa964f8abaf54f978534a123.setContent(html_732882724ad84ddb93fa111aa703536f);
+            
+
+            circle_marker_76b20dbd66e6489680cf1649f6d48e15.bindPopup(popup_d9ebb2b4aa964f8abaf54f978534a123);
+
+            
+        
+    
+            var circle_marker_780cc5cbe0c74d2581c9a114a131d4e7 = L.circleMarker(
+                [55.6835672,12.4128011280619],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_72fb6fe34c7d4dd2a42e649c0b7b93c1 = L.popup({maxWidth: '300'});
+
+            
+                var html_ea2eb45768bd4d72a673b06268f75a44 = $('<div id="html_ea2eb45768bd4d72a673b06268f75a44" style="width: 100.0%; height: 100.0%;">Glostrup Cluster 3</div>')[0];
+                popup_72fb6fe34c7d4dd2a42e649c0b7b93c1.setContent(html_ea2eb45768bd4d72a673b06268f75a44);
+            
+
+            circle_marker_780cc5cbe0c74d2581c9a114a131d4e7.bindPopup(popup_72fb6fe34c7d4dd2a42e649c0b7b93c1);
+
+            
+        
+    
+            var circle_marker_c00fca9f6aec408ba7e424cd93def25d = L.circleMarker(
+                [55.975832,10.1513202],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_93d313d727b0403abb23650d166ed8ee = L.popup({maxWidth: '300'});
+
+            
+                var html_e77cb24d3d584e93bc18f651aab1476c = $('<div id="html_e77cb24d3d584e93bc18f651aab1476c" style="width: 100.0%; height: 100.0%;">Odder Cluster 1</div>')[0];
+                popup_93d313d727b0403abb23650d166ed8ee.setContent(html_e77cb24d3d584e93bc18f651aab1476c);
+            
+
+            circle_marker_c00fca9f6aec408ba7e424cd93def25d.bindPopup(popup_93d313d727b0403abb23650d166ed8ee);
+
+            
+        
+    
+            var circle_marker_84f00dc63b64482a88737bf47662cfa1 = L.circleMarker(
+                [55.632181,12.37119799171908],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_f6e38966aff04a2ab54ffc6f4e1b27b2 = L.popup({maxWidth: '300'});
+
+            
+                var html_8a40692dc2124a8a908a95963b36207d = $('<div id="html_8a40692dc2124a8a908a95963b36207d" style="width: 100.0%; height: 100.0%;">Vallensbæk Cluster 0</div>')[0];
+                popup_f6e38966aff04a2ab54ffc6f4e1b27b2.setContent(html_8a40692dc2124a8a908a95963b36207d);
+            
+
+            circle_marker_84f00dc63b64482a88737bf47662cfa1.bindPopup(popup_f6e38966aff04a2ab54ffc6f4e1b27b2);
+
+            
+        
+    
+            var circle_marker_c0add41b6a8647c48f1cc6c0fce0bd21 = L.circleMarker(
+                [55.592487,12.6719953],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_cc3a2dfe22db4766858a0a5bb37aa439 = L.popup({maxWidth: '300'});
+
+            
+                var html_0ec2f5d7d3b5491bab4a1c551bc0fedd = $('<div id="html_0ec2f5d7d3b5491bab4a1c551bc0fedd" style="width: 100.0%; height: 100.0%;">Dragør Cluster 3</div>')[0];
+                popup_cc3a2dfe22db4766858a0a5bb37aa439.setContent(html_0ec2f5d7d3b5491bab4a1c551bc0fedd);
+            
+
+            circle_marker_c0add41b6a8647c48f1cc6c0fce0bd21.bindPopup(popup_cc3a2dfe22db4766858a0a5bb37aa439);
+
+            
+        
+    
+            var circle_marker_9c8f3e22c9724268a2537b2af4d4e225 = L.circleMarker(
+                [50.291048,2.7772211],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_34beadeb683b4f8c8c86d975545c332f = L.popup({maxWidth: '300'});
+
+            
+                var html_e3eef2eb5a77460caa026f19986a2dc8 = $('<div id="html_e3eef2eb5a77460caa026f19986a2dc8" style="width: 100.0%; height: 100.0%;">Ærø Cluster 0</div>')[0];
+                popup_34beadeb683b4f8c8c86d975545c332f.setContent(html_e3eef2eb5a77460caa026f19986a2dc8);
+            
+
+            circle_marker_9c8f3e22c9724268a2537b2af4d4e225.bindPopup(popup_34beadeb683b4f8c8c86d975545c332f);
+
+            
+        
+    
+            var circle_marker_83011fe4670c4ef5ac32703380d6dfb3 = L.circleMarker(
+                [55.88354305,10.61143170945013],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_6ce53b8cce214922b2065d152602c52c = L.popup({maxWidth: '300'});
+
+            
+                var html_904215a112e640bd855f5afd6e49e9d3 = $('<div id="html_904215a112e640bd855f5afd6e49e9d3" style="width: 100.0%; height: 100.0%;">Samsø Cluster 4</div>')[0];
+                popup_6ce53b8cce214922b2065d152602c52c.setContent(html_904215a112e640bd855f5afd6e49e9d3);
+            
+
+            circle_marker_83011fe4670c4ef5ac32703380d6dfb3.bindPopup(popup_6ce53b8cce214922b2065d152602c52c);
+
+            
+        
+    
+            var circle_marker_3efb7d2400cb4d699ada8b99f22d9075 = L.circleMarker(
+                [55.40483125,8.425016939396738],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_aba397c530ab437a8008ae9feecf12b4);
+            
+    
+            var popup_91c7c42a5bb7493cb97634986e0c3c67 = L.popup({maxWidth: '300'});
+
+            
+                var html_df94960f0ec848808c655567066fc713 = $('<div id="html_df94960f0ec848808c655567066fc713" style="width: 100.0%; height: 100.0%;">Fanø Cluster 4</div>')[0];
+                popup_91c7c42a5bb7493cb97634986e0c3c67.setContent(html_df94960f0ec848808c655567066fc713);
+            
+
+            circle_marker_3efb7d2400cb4d699ada8b99f22d9075.bindPopup(popup_91c7c42a5bb7493cb97634986e0c3c67);
+
+            
+        
+</script>

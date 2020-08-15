@@ -1,0 +1,3298 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_04d9637d160a4fba9a15df063f11374b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_04d9637d160a4fba9a15df063f11374b" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_04d9637d160a4fba9a15df063f11374b = L.map(
+                                  'map_04d9637d160a4fba9a15df063f11374b',
+                                  {center: [55.6867243,12.5700724],
+                                  zoom: 10,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_66d74ccab5564d409ab3d7898e4f4ef8 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+        
+    
+            var circle_marker_26b7af1a02ea424f8f3f6d0cb9d35638 = L.circleMarker(
+                [55.6867243,12.5700724],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_4d0c83731f194d6d9c893075bc24f4f9 = L.popup({maxWidth: '300'});
+
+            
+                var html_cd62e576eba2436b938eb2c3a1f5c1e7 = $('<div id="html_cd62e576eba2436b938eb2c3a1f5c1e7" style="width: 100.0%; height: 100.0%;">København</div>')[0];
+                popup_4d0c83731f194d6d9c893075bc24f4f9.setContent(html_cd62e576eba2436b938eb2c3a1f5c1e7);
+            
+
+            circle_marker_26b7af1a02ea424f8f3f6d0cb9d35638.bindPopup(popup_4d0c83731f194d6d9c893075bc24f4f9);
+
+            
+        
+    
+            var circle_marker_731fe2b7c4ed4ff2bd44f599655c317d = L.circleMarker(
+                [56.1496278,10.2134046],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_d7631a34452f4ababeb9b03030c659aa = L.popup({maxWidth: '300'});
+
+            
+                var html_9a98a17a0ed84db7a3ffed44e2565b21 = $('<div id="html_9a98a17a0ed84db7a3ffed44e2565b21" style="width: 100.0%; height: 100.0%;">Aarhus</div>')[0];
+                popup_d7631a34452f4ababeb9b03030c659aa.setContent(html_9a98a17a0ed84db7a3ffed44e2565b21);
+            
+
+            circle_marker_731fe2b7c4ed4ff2bd44f599655c317d.bindPopup(popup_d7631a34452f4ababeb9b03030c659aa);
+
+            
+        
+    
+            var circle_marker_e128cf2981b34bb58763c8731dfe8b38 = L.circleMarker(
+                [57.0462626,9.9215263],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_50141744372d4611bcb12dc42ff08538 = L.popup({maxWidth: '300'});
+
+            
+                var html_941112f34084465795402930a7aadaa0 = $('<div id="html_941112f34084465795402930a7aadaa0" style="width: 100.0%; height: 100.0%;">Aalborg</div>')[0];
+                popup_50141744372d4611bcb12dc42ff08538.setContent(html_941112f34084465795402930a7aadaa0);
+            
+
+            circle_marker_e128cf2981b34bb58763c8731dfe8b38.bindPopup(popup_50141744372d4611bcb12dc42ff08538);
+
+            
+        
+    
+            var circle_marker_c11b5c959fe941eab3b17bfaeecfaad0 = L.circleMarker(
+                [55.3997225,10.3852104],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_a970eec0c3324ff2a1db877db7301984 = L.popup({maxWidth: '300'});
+
+            
+                var html_79c796ba63434e5e975885db27a0da42 = $('<div id="html_79c796ba63434e5e975885db27a0da42" style="width: 100.0%; height: 100.0%;">Odense</div>')[0];
+                popup_a970eec0c3324ff2a1db877db7301984.setContent(html_79c796ba63434e5e975885db27a0da42);
+            
+
+            circle_marker_c11b5c959fe941eab3b17bfaeecfaad0.bindPopup(popup_a970eec0c3324ff2a1db877db7301984);
+
+            
+        
+    
+            var circle_marker_67cbb3ce19fb431abe682528a09dbdd5 = L.circleMarker(
+                [55.4664892,8.4520751],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_42dbccebb75a4aef84c42dbabcfb2ba3 = L.popup({maxWidth: '300'});
+
+            
+                var html_e8671e17df074052941624fcf60cf4b7 = $('<div id="html_e8671e17df074052941624fcf60cf4b7" style="width: 100.0%; height: 100.0%;">Esbjerg</div>')[0];
+                popup_42dbccebb75a4aef84c42dbabcfb2ba3.setContent(html_e8671e17df074052941624fcf60cf4b7);
+            
+
+            circle_marker_67cbb3ce19fb431abe682528a09dbdd5.bindPopup(popup_42dbccebb75a4aef84c42dbabcfb2ba3);
+
+            
+        
+    
+            var circle_marker_9f1a3f2aa57d47199ee06f1d3c7bd030 = L.circleMarker(
+                [55.7000057,9.5333238],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_6db693e817e6408882befcf8b16d6068 = L.popup({maxWidth: '300'});
+
+            
+                var html_9a28318f74184ba3af6ab720e332bbbb = $('<div id="html_9a28318f74184ba3af6ab720e332bbbb" style="width: 100.0%; height: 100.0%;">Vejle</div>')[0];
+                popup_6db693e817e6408882befcf8b16d6068.setContent(html_9a28318f74184ba3af6ab720e332bbbb);
+            
+
+            circle_marker_9f1a3f2aa57d47199ee06f1d3c7bd030.bindPopup(popup_6db693e817e6408882befcf8b16d6068);
+
+            
+        
+    
+            var circle_marker_c98a7523f12c4feb89a3d2e0a39e0139 = L.circleMarker(
+                [55.678016,12.5326186],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_32ac74ba82ab45fa9be60c2ad16ba71b = L.popup({maxWidth: '300'});
+
+            
+                var html_c7fa11da9ee94c1b88ab3fb6150a387e = $('<div id="html_c7fa11da9ee94c1b88ab3fb6150a387e" style="width: 100.0%; height: 100.0%;">Frederiksberg</div>')[0];
+                popup_32ac74ba82ab45fa9be60c2ad16ba71b.setContent(html_c7fa11da9ee94c1b88ab3fb6150a387e);
+            
+
+            circle_marker_c98a7523f12c4feb89a3d2e0a39e0139.bindPopup(popup_32ac74ba82ab45fa9be60c2ad16ba71b);
+
+            
+        
+    
+            var circle_marker_440e8b1b34b441c5a4485e6c089f2d5b = L.circleMarker(
+                [56.4355428,10.0425957],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_62ea3f0bb89248af887544b8c1a1643f = L.popup({maxWidth: '300'});
+
+            
+                var html_502f2414e40147138e9768c2470f1998 = $('<div id="html_502f2414e40147138e9768c2470f1998" style="width: 100.0%; height: 100.0%;">Randers</div>')[0];
+                popup_62ea3f0bb89248af887544b8c1a1643f.setContent(html_502f2414e40147138e9768c2470f1998);
+            
+
+            circle_marker_440e8b1b34b441c5a4485e6c089f2d5b.bindPopup(popup_62ea3f0bb89248af887544b8c1a1643f);
+
+            
+        
+    
+            var circle_marker_b5c6bc9428914bc2bb0acf901dca6fba = L.circleMarker(
+                [56.4469128,9.4059354],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_fae9f0106ff7402eb90a85bf67e394dd = L.popup({maxWidth: '300'});
+
+            
+                var html_3419bc6960bb473d8dcc4b6aec30b6ae = $('<div id="html_3419bc6960bb473d8dcc4b6aec30b6ae" style="width: 100.0%; height: 100.0%;">Viborg</div>')[0];
+                popup_fae9f0106ff7402eb90a85bf67e394dd.setContent(html_3419bc6960bb473d8dcc4b6aec30b6ae);
+            
+
+            circle_marker_b5c6bc9428914bc2bb0acf901dca6fba.bindPopup(popup_fae9f0106ff7402eb90a85bf67e394dd);
+
+            
+        
+    
+            var circle_marker_5b7ae1a05acc40c6823ee609349c8f50 = L.circleMarker(
+                [56.169453,9.5495141],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_44b1baea1632448eb3b74abf606e60b4 = L.popup({maxWidth: '300'});
+
+            
+                var html_53ae8b4c5d8e47b880e62a17a61a6cec = $('<div id="html_53ae8b4c5d8e47b880e62a17a61a6cec" style="width: 100.0%; height: 100.0%;">Silkeborg</div>')[0];
+                popup_44b1baea1632448eb3b74abf606e60b4.setContent(html_53ae8b4c5d8e47b880e62a17a61a6cec);
+            
+
+            circle_marker_5b7ae1a05acc40c6823ee609349c8f50.bindPopup(popup_44b1baea1632448eb3b74abf606e60b4);
+
+            
+        
+    
+            var circle_marker_08fea2f26d914a2e8989c23ea419aa64 = L.circleMarker(
+                [55.4894999,9.47905],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_c9293b4b6a4348a3b19f7bba2a007fa8 = L.popup({maxWidth: '300'});
+
+            
+                var html_94d418383cdc4ffa9d674c0326a78143 = $('<div id="html_94d418383cdc4ffa9d674c0326a78143" style="width: 100.0%; height: 100.0%;">Kolding</div>')[0];
+                popup_c9293b4b6a4348a3b19f7bba2a007fa8.setContent(html_94d418383cdc4ffa9d674c0326a78143);
+            
+
+            circle_marker_08fea2f26d914a2e8989c23ea419aa64.bindPopup(popup_c9293b4b6a4348a3b19f7bba2a007fa8);
+
+            
+        
+    
+            var circle_marker_be6ba16ef5da4582815d438c262bd7a0 = L.circleMarker(
+                [55.8611696,9.8444774],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_252525be8ae940e481124c7d94230901 = L.popup({maxWidth: '300'});
+
+            
+                var html_15be896d756f450c8c899c9fee18d9ae = $('<div id="html_15be896d756f450c8c899c9fee18d9ae" style="width: 100.0%; height: 100.0%;">Horsens</div>')[0];
+                popup_252525be8ae940e481124c7d94230901.setContent(html_15be896d756f450c8c899c9fee18d9ae);
+            
+
+            circle_marker_be6ba16ef5da4582815d438c262bd7a0.bindPopup(popup_252525be8ae940e481124c7d94230901);
+
+            
+        
+    
+            var circle_marker_b7b38cc0d5cb40fca876bec72b8bd958 = L.circleMarker(
+                [56.1379757,8.9746623],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_1ee0355d8b8b467fb6973b59da57d8ca = L.popup({maxWidth: '300'});
+
+            
+                var html_50e46bd2a7654224a9cf351d8ecd432d = $('<div id="html_50e46bd2a7654224a9cf351d8ecd432d" style="width: 100.0%; height: 100.0%;">Herning</div>')[0];
+                popup_1ee0355d8b8b467fb6973b59da57d8ca.setContent(html_50e46bd2a7654224a9cf351d8ecd432d);
+            
+
+            circle_marker_b7b38cc0d5cb40fca876bec72b8bd958.bindPopup(popup_1ee0355d8b8b467fb6973b59da57d8ca);
+
+            
+        
+    
+            var circle_marker_6bc80c1cd8464223bdc0783854ac9e11 = L.circleMarker(
+                [55.6433478,12.0819247],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_ee15424a29974135a7a2fe2891832c85 = L.popup({maxWidth: '300'});
+
+            
+                var html_07f26daa501b4f33bbc8e5a0af9cfe16 = $('<div id="html_07f26daa501b4f33bbc8e5a0af9cfe16" style="width: 100.0%; height: 100.0%;">Roskilde</div>')[0];
+                popup_ee15424a29974135a7a2fe2891832c85.setContent(html_07f26daa501b4f33bbc8e5a0af9cfe16);
+            
+
+            circle_marker_6bc80c1cd8464223bdc0783854ac9e11.bindPopup(popup_ee15424a29974135a7a2fe2891832c85);
+
+            
+        
+    
+            var circle_marker_bb1a28e49de04e609354d2ba848bb4fa = L.circleMarker(
+                [55.2328252,11.7674102],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_1fff71f33ada4db9a0bf030088c6ca7e = L.popup({maxWidth: '300'});
+
+            
+                var html_d9ecbe4d8ae14cefbc0780227b2553ba = $('<div id="html_d9ecbe4d8ae14cefbc0780227b2553ba" style="width: 100.0%; height: 100.0%;">Næstved</div>')[0];
+                popup_1fff71f33ada4db9a0bf030088c6ca7e.setContent(html_d9ecbe4d8ae14cefbc0780227b2553ba);
+            
+
+            circle_marker_bb1a28e49de04e609354d2ba848bb4fa.bindPopup(popup_1fff71f33ada4db9a0bf030088c6ca7e);
+
+            
+        
+    
+            var circle_marker_e9a26155eefe400f815edb98e3e07149 = L.circleMarker(
+                [55.397636750000004,11.333716594292895],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_17bbc4e521314f72a0333bb74b06cc52 = L.popup({maxWidth: '300'});
+
+            
+                var html_fee1060630954f3cbb310e7378fed105 = $('<div id="html_fee1060630954f3cbb310e7378fed105" style="width: 100.0%; height: 100.0%;">Slagelse</div>')[0];
+                popup_17bbc4e521314f72a0333bb74b06cc52.setContent(html_fee1060630954f3cbb310e7378fed105);
+            
+
+            circle_marker_e9a26155eefe400f815edb98e3e07149.bindPopup(popup_17bbc4e521314f72a0333bb74b06cc52);
+
+            
+        
+    
+            var circle_marker_76bbbc3d0cf14223b0cff0de434e85a5 = L.circleMarker(
+                [55.7459656,12.5510249],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_24d36026e315487381b938260976b37a = L.popup({maxWidth: '300'});
+
+            
+                var html_1b1bf2d56ed445cfbb6e3a99aa2274bf = $('<div id="html_1b1bf2d56ed445cfbb6e3a99aa2274bf" style="width: 100.0%; height: 100.0%;">Gentofte</div>')[0];
+                popup_24d36026e315487381b938260976b37a.setContent(html_1b1bf2d56ed445cfbb6e3a99aa2274bf);
+            
+
+            circle_marker_76bbbc3d0cf14223b0cff0de434e85a5.bindPopup(popup_24d36026e315487381b938260976b37a);
+
+            
+        
+    
+            var circle_marker_1a4069663a7a46128cd2858549b0ec29 = L.circleMarker(
+                [54.9089186,9.7897999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_91d24ed09a1b4071863dbe5fe9132030 = L.popup({maxWidth: '300'});
+
+            
+                var html_4dac44072bb64be388a84b5ecfd98cbb = $('<div id="html_4dac44072bb64be388a84b5ecfd98cbb" style="width: 100.0%; height: 100.0%;">Sønderborg</div>')[0];
+                popup_91d24ed09a1b4071863dbe5fe9132030.setContent(html_4dac44072bb64be388a84b5ecfd98cbb);
+            
+
+            circle_marker_1a4069663a7a46128cd2858549b0ec29.bindPopup(popup_91d24ed09a1b4071863dbe5fe9132030);
+
+            
+        
+    
+            var circle_marker_41b94b6e35434e36ab36a48e1e02191b = L.circleMarker(
+                [55.7186117,11.7135474],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_d9cf0640cae74d28a85eb529bd4c6f5e = L.popup({maxWidth: '300'});
+
+            
+                var html_e5829a3ff7d7467cbcdeccc0d7da408a = $('<div id="html_e5829a3ff7d7467cbcdeccc0d7da408a" style="width: 100.0%; height: 100.0%;">Holbæk</div>')[0];
+                popup_d9cf0640cae74d28a85eb529bd4c6f5e.setContent(html_e5829a3ff7d7467cbcdeccc0d7da408a);
+            
+
+            circle_marker_41b94b6e35434e36ab36a48e1e02191b.bindPopup(popup_d9cf0640cae74d28a85eb529bd4c6f5e);
+
+            
+        
+    
+            var circle_marker_81583a9a5abd4b33b9b56be38f63c7dd = L.circleMarker(
+                [55.7383794,12.4696107],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_00dac94f391f44fe91063ac16b2c332f = L.popup({maxWidth: '300'});
+
+            
+                var html_f578f9002b3a4ef7900a06cf37a78d55 = $('<div id="html_f578f9002b3a4ef7900a06cf37a78d55" style="width: 100.0%; height: 100.0%;">Gladsaxe</div>')[0];
+                popup_00dac94f391f44fe91063ac16b2c332f.setContent(html_f578f9002b3a4ef7900a06cf37a78d55);
+            
+
+            circle_marker_81583a9a5abd4b33b9b56be38f63c7dd.bindPopup(popup_00dac94f391f44fe91063ac16b2c332f);
+
+            
+        
+    
+            var circle_marker_4157a3838f57459c80fba9866e07bc46 = L.circleMarker(
+                [57.457183,9.9855998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_40f3e0a2cfae40e3872160e680e97b42 = L.popup({maxWidth: '300'});
+
+            
+                var html_8ebba06a3b5f4461ae1a537831a9f7ff = $('<div id="html_8ebba06a3b5f4461ae1a537831a9f7ff" style="width: 100.0%; height: 100.0%;">Hjørring</div>')[0];
+                popup_40f3e0a2cfae40e3872160e680e97b42.setContent(html_8ebba06a3b5f4461ae1a537831a9f7ff);
+            
+
+            circle_marker_4157a3838f57459c80fba9866e07bc46.bindPopup(popup_40f3e0a2cfae40e3872160e680e97b42);
+
+            
+        
+    
+            var circle_marker_637a10797b4a4ce3ae43c25860216543 = L.circleMarker(
+                [56.0345277,12.6136135],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_bdb6c2a784dd4cf996c746fd2c6c1aea = L.popup({maxWidth: '300'});
+
+            
+                var html_a6235ca064c743ac9cc756e36c09ad86 = $('<div id="html_a6235ca064c743ac9cc756e36c09ad86" style="width: 100.0%; height: 100.0%;">Helsingør</div>')[0];
+                popup_bdb6c2a784dd4cf996c746fd2c6c1aea.setContent(html_a6235ca064c743ac9cc756e36c09ad86);
+            
+
+            circle_marker_637a10797b4a4ce3ae43c25860216543.bindPopup(popup_bdb6c2a784dd4cf996c746fd2c6c1aea);
+
+            
+        
+    
+            var circle_marker_24dc03fd412240bc9d58c66d14fc6566 = L.circleMarker(
+                [56.0351868,9.9317878],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_116a1c869e934040841f1146e5cab15b = L.popup({maxWidth: '300'});
+
+            
+                var html_4978f86089864db8903bdb6d7a82ff9e = $('<div id="html_4978f86089864db8903bdb6d7a82ff9e" style="width: 100.0%; height: 100.0%;">Skanderborg</div>')[0];
+                popup_116a1c869e934040841f1146e5cab15b.setContent(html_4978f86089864db8903bdb6d7a82ff9e);
+            
+
+            circle_marker_24dc03fd412240bc9d58c66d14fc6566.bindPopup(popup_116a1c869e934040841f1146e5cab15b);
+
+            
+        
+    
+            var circle_marker_ab59a1dee1ce4ebca2c4088a33540ce8 = L.circleMarker(
+                [54.79095995,11.825269990321779],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_5c65ad66e48047889bf331c6fae33ed2 = L.popup({maxWidth: '300'});
+
+            
+                var html_7b90a8c529694819b73843aceaebd05a = $('<div id="html_7b90a8c529694819b73843aceaebd05a" style="width: 100.0%; height: 100.0%;">Guldborgsund</div>')[0];
+                popup_5c65ad66e48047889bf331c6fae33ed2.setContent(html_7b90a8c529694819b73843aceaebd05a);
+            
+
+            circle_marker_ab59a1dee1ce4ebca2c4088a33540ce8.bindPopup(popup_5c65ad66e48047889bf331c6fae33ed2);
+
+            
+        
+    
+            var circle_marker_754719e66c8c43e28b843623a89e386b = L.circleMarker(
+                [55.4565009,12.1818964],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_b66de0119ac84132979ee880b2a09290 = L.popup({maxWidth: '300'});
+
+            
+                var html_02c31a46664a4ffab813cdea7e5cc863 = $('<div id="html_02c31a46664a4ffab813cdea7e5cc863" style="width: 100.0%; height: 100.0%;">Køge</div>')[0];
+                popup_b66de0119ac84132979ee880b2a09290.setContent(html_02c31a46664a4ffab813cdea7e5cc863);
+            
+
+            circle_marker_754719e66c8c43e28b843623a89e386b.bindPopup(popup_b66de0119ac84132979ee880b2a09290);
+
+            
+        
+    
+            var circle_marker_34894d33db8f4a51a0399708ed0a4d8a = L.circleMarker(
+                [57.4412134,10.5336225],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_beb18520d30f4b3f92ba4409e91d9d13 = L.popup({maxWidth: '300'});
+
+            
+                var html_33972d061e764c389a64b9ff8ae8167e = $('<div id="html_33972d061e764c389a64b9ff8ae8167e" style="width: 100.0%; height: 100.0%;">Frederikshavn</div>')[0];
+                popup_beb18520d30f4b3f92ba4409e91d9d13.setContent(html_33972d061e764c389a64b9ff8ae8167e);
+            
+
+            circle_marker_34894d33db8f4a51a0399708ed0a4d8a.bindPopup(popup_beb18520d30f4b3f92ba4409e91d9d13);
+
+            
+        
+    
+            var circle_marker_6a3f6ae35376429e80906cff2f4527cc = L.circleMarker(
+                [55.0446228,9.4209667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_ff1c8298e9484d5395f5003c07b15614 = L.popup({maxWidth: '300'});
+
+            
+                var html_79171891e71341d2bd5e1b41445a7719 = $('<div id="html_79171891e71341d2bd5e1b41445a7719" style="width: 100.0%; height: 100.0%;">Aabenraa</div>')[0];
+                popup_ff1c8298e9484d5395f5003c07b15614.setContent(html_79171891e71341d2bd5e1b41445a7719);
+            
+
+            circle_marker_6a3f6ae35376429e80906cff2f4527cc.bindPopup(popup_ff1c8298e9484d5395f5003c07b15614);
+
+            
+        
+    
+            var circle_marker_b9dd7abfbc1c491dab203b47766bc997 = L.circleMarker(
+                [55.0636697,10.6082512],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_c1039208ffae466c94d1f97b0ec15d04 = L.popup({maxWidth: '300'});
+
+            
+                var html_f882fc4e427843e1aef977ca6556fac3 = $('<div id="html_f882fc4e427843e1aef977ca6556fac3" style="width: 100.0%; height: 100.0%;">Svendborg</div>')[0];
+                popup_c1039208ffae466c94d1f97b0ec15d04.setContent(html_f882fc4e427843e1aef977ca6556fac3);
+            
+
+            circle_marker_b9dd7abfbc1c491dab203b47766bc997.bindPopup(popup_c1039208ffae466c94d1f97b0ec15d04);
+
+            
+        
+    
+            var circle_marker_94494c4d55e24192b68159ee6927f635 = L.circleMarker(
+                [56.3590324,8.6159188],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_1ddf84207b3644e89f59136efd593c9a = L.popup({maxWidth: '300'});
+
+            
+                var html_21992bfa6ec5402f93bbaddaee6ac548 = $('<div id="html_21992bfa6ec5402f93bbaddaee6ac548" style="width: 100.0%; height: 100.0%;">Holstebro</div>')[0];
+                popup_1ddf84207b3644e89f59136efd593c9a.setContent(html_21992bfa6ec5402f93bbaddaee6ac548);
+            
+
+            circle_marker_94494c4d55e24192b68159ee6927f635.bindPopup(popup_1ddf84207b3644e89f59136efd593c9a);
+
+            
+        
+    
+            var circle_marker_6d3f5e109098436abe913b76323c5fc7 = L.circleMarker(
+                [56.01770905,8.54765064643927],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_967dc2dcf2aa4890b32a919cd06894dd = L.popup({maxWidth: '300'});
+
+            
+                var html_c64158d81b6d46d38d35b6e6325a8914 = $('<div id="html_c64158d81b6d46d38d35b6e6325a8914" style="width: 100.0%; height: 100.0%;">Ringkøbing-Skjern</div>')[0];
+                popup_967dc2dcf2aa4890b32a919cd06894dd.setContent(html_c64158d81b6d46d38d35b6e6325a8914);
+            
+
+            circle_marker_6d3f5e109098436abe913b76323c5fc7.bindPopup(popup_967dc2dcf2aa4890b32a919cd06894dd);
+
+            
+        
+    
+            var circle_marker_1213d29bee0c48e4a2aae7b1ede16caa = L.circleMarker(
+                [55.8367165,12.485153940503443],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_40c9d5e9af3d461da91592c58868a123 = L.popup({maxWidth: '300'});
+
+            
+                var html_bc78d2d8e3ef46f385244328092f1367 = $('<div id="html_bc78d2d8e3ef46f385244328092f1367" style="width: 100.0%; height: 100.0%;">Rudersdal</div>')[0];
+                popup_40c9d5e9af3d461da91592c58868a123.setContent(html_bc78d2d8e3ef46f385244328092f1367);
+            
+
+            circle_marker_1213d29bee0c48e4a2aae7b1ede16caa.bindPopup(popup_40c9d5e9af3d461da91592c58868a123);
+
+            
+        
+    
+            var circle_marker_a6bd00d0ddd341a58fa33ed862c7523c = L.circleMarker(
+                [55.2500715,9.4997871],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_185cd106a0af4044a578db52657c1743 = L.popup({maxWidth: '300'});
+
+            
+                var html_49e155d499a94c4da2b2de5bd80562b8 = $('<div id="html_49e155d499a94c4da2b2de5bd80562b8" style="width: 100.0%; height: 100.0%;">Haderslev</div>')[0];
+                popup_185cd106a0af4044a578db52657c1743.setContent(html_49e155d499a94c4da2b2de5bd80562b8);
+            
+
+            circle_marker_a6bd00d0ddd341a58fa33ed862c7523c.bindPopup(popup_185cd106a0af4044a578db52657c1743);
+
+            
+        
+    
+            var circle_marker_66ae1f80ac554c0facc184b0be20ddc7 = L.circleMarker(
+                [55.7718649,12.5051413],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_d8ba2d8b336c4d719c320c15b2de19de = L.popup({maxWidth: '300'});
+
+            
+                var html_c3e803b1f4e444f7a038ce7822166c8d = $('<div id="html_c3e803b1f4e444f7a038ce7822166c8d" style="width: 100.0%; height: 100.0%;">Lyngby-Taarbæk</div>')[0];
+                popup_d8ba2d8b336c4d719c320c15b2de19de.setContent(html_c3e803b1f4e444f7a038ce7822166c8d);
+            
+
+            circle_marker_66ae1f80ac554c0facc184b0be20ddc7.bindPopup(popup_d8ba2d8b336c4d719c320c15b2de19de);
+
+            
+        
+    
+            var circle_marker_ad3699d445dd4c05a756f73e3d8cc20c = L.circleMarker(
+                [55.6441712,12.4772091],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_60a88f9c32894198adc7af62fe87c3fa = L.popup({maxWidth: '300'});
+
+            
+                var html_93b167e339ff435387ab08d1155eaff8 = $('<div id="html_93b167e339ff435387ab08d1155eaff8" style="width: 100.0%; height: 100.0%;">Hvidovre</div>')[0];
+                popup_60a88f9c32894198adc7af62fe87c3fa.setContent(html_93b167e339ff435387ab08d1155eaff8);
+            
+
+            circle_marker_ad3699d445dd4c05a756f73e3d8cc20c.bindPopup(popup_60a88f9c32894198adc7af62fe87c3fa);
+
+            
+        
+    
+            var circle_marker_9b6aeb7f840048429103d7789a69e4f0 = L.circleMarker(
+                [55.097087,10.2428246],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_68a522329e524275ad00711461921acd = L.popup({maxWidth: '300'});
+
+            
+                var html_c7087c94c3634bf8867150a85d9c84b4 = $('<div id="html_c7087c94c3634bf8867150a85d9c84b4" style="width: 100.0%; height: 100.0%;">Faaborg-Midtfyn</div>')[0];
+                popup_68a522329e524275ad00711461921acd.setContent(html_c7087c94c3634bf8867150a85d9c84b4);
+            
+
+            circle_marker_9b6aeb7f840048429103d7789a69e4f0.bindPopup(popup_68a522329e524275ad00711461921acd);
+
+            
+        
+    
+            var circle_marker_49fed5e249c64bb9b4d9e518ea4be79f = L.circleMarker(
+                [55.565268,9.7562169],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_c1427b3692d24fd088cd07cb4612d76b = L.popup({maxWidth: '300'});
+
+            
+                var html_24fae0ff5adc4cc0bebf7ef22cde08f7 = $('<div id="html_24fae0ff5adc4cc0bebf7ef22cde08f7" style="width: 100.0%; height: 100.0%;">Fredericia</div>')[0];
+                popup_c1427b3692d24fd088cd07cb4612d76b.setContent(html_24fae0ff5adc4cc0bebf7ef22cde08f7);
+            
+
+            circle_marker_49fed5e249c64bb9b4d9e518ea4be79f.bindPopup(popup_c1427b3692d24fd088cd07cb4612d76b);
+
+            
+        
+    
+            var circle_marker_6bceefa6be174ab68e1ddc19d9f30f82 = L.circleMarker(
+                [55.9285735,12.3063909],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_7ed5dbac3ae54781922ace6b14fe63e9 = L.popup({maxWidth: '300'});
+
+            
+                var html_90598e52c3ac4bcda16d625a07043703 = $('<div id="html_90598e52c3ac4bcda16d625a07043703" style="width: 100.0%; height: 100.0%;">Hillerød</div>')[0];
+                popup_7ed5dbac3ae54781922ace6b14fe63e9.setContent(html_90598e52c3ac4bcda16d625a07043703);
+            
+
+            circle_marker_6bceefa6be174ab68e1ddc19d9f30f82.bindPopup(popup_7ed5dbac3ae54781922ace6b14fe63e9);
+
+            
+        
+    
+            var circle_marker_f5a46e30d1494bf5ad6acd97229ee16c = L.circleMarker(
+                [55.656548799999996,12.243321024652472],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_ffe338c99234435e9cd2d386ba434bdb = L.popup({maxWidth: '300'});
+
+            
+                var html_d085fc505c5f4b5bb866f7985948a57a = $('<div id="html_d085fc505c5f4b5bb866f7985948a57a" style="width: 100.0%; height: 100.0%;">Høje-Taastrup</div>')[0];
+                popup_ffe338c99234435e9cd2d386ba434bdb.setContent(html_d085fc505c5f4b5bb866f7985948a57a);
+            
+
+            circle_marker_f5a46e30d1494bf5ad6acd97229ee16c.bindPopup(popup_ffe338c99234435e9cd2d386ba434bdb);
+
+            
+        
+    
+            var circle_marker_674f9ad8ddb04f55b8f40eff14a62841 = L.circleMarker(
+                [55.5833746,12.2999286],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_b285dbaffc8d48258f0c51f3f1de280c = L.popup({maxWidth: '300'});
+
+            
+                var html_5bb344bf5b9d4d629bdcc878aa8fccfc = $('<div id="html_5bb344bf5b9d4d629bdcc878aa8fccfc" style="width: 100.0%; height: 100.0%;">Greve</div>')[0];
+                popup_b285dbaffc8d48258f0c51f3f1de280c.setContent(html_5bb344bf5b9d4d629bdcc878aa8fccfc);
+            
+
+            circle_marker_674f9ad8ddb04f55b8f40eff14a62841.bindPopup(popup_b285dbaffc8d48258f0c51f3f1de280c);
+
+            
+        
+    
+            var circle_marker_e4b3d2edf35249aca77f5355a97e98fd = L.circleMarker(
+                [55.6176702,8.4811757],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_04a726e157784776a2a009982e12f4f3 = L.popup({maxWidth: '300'});
+
+            
+                var html_b924dd477d784f1e9a9ee3a381261a4d = $('<div id="html_b924dd477d784f1e9a9ee3a381261a4d" style="width: 100.0%; height: 100.0%;">Varde</div>')[0];
+                popup_04a726e157784776a2a009982e12f4f3.setContent(html_b924dd477d784f1e9a9ee3a381261a4d);
+            
+
+            circle_marker_e4b3d2edf35249aca77f5355a97e98fd.bindPopup(popup_04a726e157784776a2a009982e12f4f3);
+
+            
+        
+    
+            var circle_marker_ae40e069677d4a5f9fbbc4f696f8f007 = L.circleMarker(
+                [55.6833793,11.0993619],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_9079db08cc1e4441a09e7e97af37c10b = L.popup({maxWidth: '300'});
+
+            
+                var html_907d4d3168834eb5abfd66db63310bb4 = $('<div id="html_907d4d3168834eb5abfd66db63310bb4" style="width: 100.0%; height: 100.0%;">Kalundborg</div>')[0];
+                popup_9079db08cc1e4441a09e7e97af37c10b.setContent(html_907d4d3168834eb5abfd66db63310bb4);
+            
+
+            circle_marker_ae40e069677d4a5f9fbbc4f696f8f007.bindPopup(popup_9079db08cc1e4441a09e7e97af37c10b);
+
+            
+        
+    
+            var circle_marker_a77d4336069d40e7acc27c0dc2e71bd2 = L.circleMarker(
+                [55.7303589,12.3612313],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_2d10fd5b303c46fca6b8b78ac6c1e850 = L.popup({maxWidth: '300'});
+
+            
+                var html_9e83ed7bd69645beab6be96464154fb8 = $('<div id="html_9e83ed7bd69645beab6be96464154fb8" style="width: 100.0%; height: 100.0%;">Ballerup</div>')[0];
+                popup_2d10fd5b303c46fca6b8b78ac6c1e850.setContent(html_9e83ed7bd69645beab6be96464154fb8);
+            
+
+            circle_marker_a77d4336069d40e7acc27c0dc2e71bd2.bindPopup(popup_2d10fd5b303c46fca6b8b78ac6c1e850);
+
+            
+        
+    
+            var circle_marker_7fd5f5b2e64647b681373763cc6d1f51 = L.circleMarker(
+                [56.336432849999994,9.99090725],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_b0a953051bf843c7a28dcc468fc5e2ee = L.popup({maxWidth: '300'});
+
+            
+                var html_1d4cd603fb634fdeb60bb28d2eb73bb1 = $('<div id="html_1d4cd603fb634fdeb60bb28d2eb73bb1" style="width: 100.0%; height: 100.0%;">Favrskov</div>')[0];
+                popup_b0a953051bf843c7a28dcc468fc5e2ee.setContent(html_1d4cd603fb634fdeb60bb28d2eb73bb1);
+            
+
+            circle_marker_7fd5f5b2e64647b681373763cc6d1f51.bindPopup(popup_b0a953051bf843c7a28dcc468fc5e2ee);
+
+            
+        
+    
+            var circle_marker_43f28f11a4d345e782fa23ec7649bf51 = L.circleMarker(
+                [55.7705233,9.6994255],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_a63cd0cd4c144c5aae2a326b1180f6e7 = L.popup({maxWidth: '300'});
+
+            
+                var html_5bfd83e7edaf405c8ef8601a751120c2 = $('<div id="html_5bfd83e7edaf405c8ef8601a751120c2" style="width: 100.0%; height: 100.0%;">Hedensted</div>')[0];
+                popup_a63cd0cd4c144c5aae2a326b1180f6e7.setContent(html_5bfd83e7edaf405c8ef8601a751120c2);
+            
+
+            circle_marker_43f28f11a4d345e782fa23ec7649bf51.bindPopup(popup_a63cd0cd4c144c5aae2a326b1180f6e7);
+
+            
+        
+    
+            var circle_marker_386e467ed85742aeb5c3c551e8237395 = L.circleMarker(
+                [56.6459244,8.932732160154906],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_caca92ec9d7b46e49e633950f3cd759a = L.popup({maxWidth: '300'});
+
+            
+                var html_1140ed3b862a4780a93d947d6124f119 = $('<div id="html_1140ed3b862a4780a93d947d6124f119" style="width: 100.0%; height: 100.0%;">Skive</div>')[0];
+                popup_caca92ec9d7b46e49e633950f3cd759a.setContent(html_1140ed3b862a4780a93d947d6124f119);
+            
+
+            circle_marker_386e467ed85742aeb5c3c551e8237395.bindPopup(popup_caca92ec9d7b46e49e633950f3cd759a);
+
+            
+        
+    
+            var circle_marker_9e7465e06ac742ae9a8fe9e9bef0f547 = L.circleMarker(
+                [55.0102518,11.9097478],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_90c28445975c474dbdda006b896a2c20 = L.popup({maxWidth: '300'});
+
+            
+                var html_54593f15822c4209ba1ee123453cc702 = $('<div id="html_54593f15822c4209ba1ee123453cc702" style="width: 100.0%; height: 100.0%;">Vordingborg</div>')[0];
+                popup_90c28445975c474dbdda006b896a2c20.setContent(html_54593f15822c4209ba1ee123453cc702);
+            
+
+            circle_marker_9e7465e06ac742ae9a8fe9e9bef0f547.bindPopup(popup_90c28445975c474dbdda006b896a2c20);
+
+            
+        
+    
+            var circle_marker_0d5a14d93d2143248fd0ff4e71db1887 = L.circleMarker(
+                [55.8417752,12.063595],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_2e064ec0415a4d0a8ffadee0a081a806 = L.popup({maxWidth: '300'});
+
+            
+                var html_b32dc2e6f0ad4703bcc4e3e3452188e5 = $('<div id="html_b32dc2e6f0ad4703bcc4e3e3452188e5" style="width: 100.0%; height: 100.0%;">Frederikssund</div>')[0];
+                popup_2e064ec0415a4d0a8ffadee0a081a806.setContent(html_b32dc2e6f0ad4703bcc4e3e3452188e5);
+            
+
+            circle_marker_0d5a14d93d2143248fd0ff4e71db1887.bindPopup(popup_2e064ec0415a4d0a8ffadee0a081a806);
+
+            
+        
+    
+            var circle_marker_400ccae3005f4fc0aec21eab0f04c2a2 = L.circleMarker(
+                [56.9562093,8.6848749],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_9a98eb3c14cd439d9cdd2b9c9eac9eb1 = L.popup({maxWidth: '300'});
+
+            
+                var html_0685a0005bc545e29e0306b5f6a7dbb0 = $('<div id="html_0685a0005bc545e29e0306b5f6a7dbb0" style="width: 100.0%; height: 100.0%;">Thisted</div>')[0];
+                popup_9a98eb3c14cd439d9cdd2b9c9eac9eb1.setContent(html_0685a0005bc545e29e0306b5f6a7dbb0);
+            
+
+            circle_marker_400ccae3005f4fc0aec21eab0f04c2a2.bindPopup(popup_9a98eb3c14cd439d9cdd2b9c9eac9eb1);
+
+            
+        
+    
+            var circle_marker_b7e63626bab247eeb331483100cfd7d5 = L.circleMarker(
+                [55.7797855,12.1854997],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_a58db93373974191a5e75bccf5e6005b = L.popup({maxWidth: '300'});
+
+            
+                var html_813765907cf84430932db51aa93b9e6e = $('<div id="html_813765907cf84430932db51aa93b9e6e" style="width: 100.0%; height: 100.0%;">Egedal</div>')[0];
+                popup_a58db93373974191a5e75bccf5e6005b.setContent(html_813765907cf84430932db51aa93b9e6e);
+            
+
+            circle_marker_b7e63626bab247eeb331483100cfd7d5.bindPopup(popup_a58db93373974191a5e75bccf5e6005b);
+
+            
+        
+    
+            var circle_marker_d2151c52f9ac40299f3b5b8391c1cb0b = L.circleMarker(
+                [55.6281838,12.5997628],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_b87251348d8d43969dcdaf0c3496795b = L.popup({maxWidth: '300'});
+
+            
+                var html_6654b406140b462ba547d4c21f42dbff = $('<div id="html_6654b406140b462ba547d4c21f42dbff" style="width: 100.0%; height: 100.0%;">Tårnby</div>')[0];
+                popup_b87251348d8d43969dcdaf0c3496795b.setContent(html_6654b406140b462ba547d4c21f42dbff);
+            
+
+            circle_marker_d2151c52f9ac40299f3b5b8391c1cb0b.bindPopup(popup_b87251348d8d43969dcdaf0c3496795b);
+
+            
+        
+    
+            var circle_marker_d3cfd04598f44398b504f33429720428 = L.circleMarker(
+                [55.4743417,9.1317951],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_ce02a467291d4b12b63acec7e119a801 = L.popup({maxWidth: '300'});
+
+            
+                var html_e9ff25f54e904803bc15edab54e64141 = $('<div id="html_e9ff25f54e904803bc15edab54e64141" style="width: 100.0%; height: 100.0%;">Vejen</div>')[0];
+                popup_ce02a467291d4b12b63acec7e119a801.setContent(html_e9ff25f54e904803bc15edab54e64141);
+            
+
+            circle_marker_d3cfd04598f44398b504f33429720428.bindPopup(popup_ce02a467291d4b12b63acec7e119a801);
+
+            
+        
+    
+            var circle_marker_0a92265546774baca4842354ba9367bf = L.circleMarker(
+                [56.27146895,10.662949515014887],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_12d4e2ab882a46139fbd482a1a903307 = L.popup({maxWidth: '300'});
+
+            
+                var html_fb79d72b442b4fe49adab40baa02d9f1 = $('<div id="html_fb79d72b442b4fe49adab40baa02d9f1" style="width: 100.0%; height: 100.0%;">Syddjurs</div>')[0];
+                popup_12d4e2ab882a46139fbd482a1a903307.setContent(html_fb79d72b442b4fe49adab40baa02d9f1);
+            
+
+            circle_marker_0a92265546774baca4842354ba9367bf.bindPopup(popup_12d4e2ab882a46139fbd482a1a903307);
+
+            
+        
+    
+            var circle_marker_475e1024696b4218a906235635bb2048 = L.circleMarker(
+                [56.705646099999996,9.920066346120262],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_92ee66ab2dbe490e8398ff87af432de5 = L.popup({maxWidth: '300'});
+
+            
+                var html_c699181731214a4ca1f356a4d715d9cc = $('<div id="html_c699181731214a4ca1f356a4d715d9cc" style="width: 100.0%; height: 100.0%;">Mariagerfjord</div>')[0];
+                popup_92ee66ab2dbe490e8398ff87af432de5.setContent(html_c699181731214a4ca1f356a4d715d9cc);
+            
+
+            circle_marker_475e1024696b4218a906235635bb2048.bindPopup(popup_92ee66ab2dbe490e8398ff87af432de5);
+
+            
+        
+    
+            var circle_marker_815755d68204494584922d6b996dd3cf = L.circleMarker(
+                [54.7772557,11.415690399084347],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_6347055f36cb49f5a03ad403fb9db9a1 = L.popup({maxWidth: '300'});
+
+            
+                var html_22c8ec17988840af8acc17fa4e5b4791 = $('<div id="html_22c8ec17988840af8acc17fa4e5b4791" style="width: 100.0%; height: 100.0%;">Lolland</div>')[0];
+                popup_6347055f36cb49f5a03ad403fb9db9a1.setContent(html_22c8ec17988840af8acc17fa4e5b4791);
+            
+
+            circle_marker_815755d68204494584922d6b996dd3cf.bindPopup(popup_6347055f36cb49f5a03ad403fb9db9a1);
+
+            
+        
+    
+            var circle_marker_94ced3ee1919441181cf9ccb12fdffcb = L.circleMarker(
+                [56.1390178,9.1547931],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_a6026a099676409ab6e3d8fc49bfaef2 = L.popup({maxWidth: '300'});
+
+            
+                var html_ce8926fe5d844df49ae7ffb3c0530753 = $('<div id="html_ce8926fe5d844df49ae7ffb3c0530753" style="width: 100.0%; height: 100.0%;">Ikast-Brande</div>')[0];
+                popup_a6026a099676409ab6e3d8fc49bfaef2.setContent(html_ce8926fe5d844df49ae7ffb3c0530753);
+            
+
+            circle_marker_94ced3ee1919441181cf9ccb12fdffcb.bindPopup(popup_a6026a099676409ab6e3d8fc49bfaef2);
+
+            
+        
+    
+            var circle_marker_a604c75a8c29466c90922c0a904cffc8 = L.circleMarker(
+                [55.265798,9.9002174],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_c13cedd25fe341e788e20cc537c464bc = L.popup({maxWidth: '300'});
+
+            
+                var html_3b3bea647df94066abc178aa0558d984 = $('<div id="html_3b3bea647df94066abc178aa0558d984" style="width: 100.0%; height: 100.0%;">Assens</div>')[0];
+                popup_c13cedd25fe341e788e20cc537c464bc.setContent(html_3b3bea647df94066abc178aa0558d984);
+            
+
+            circle_marker_a604c75a8c29466c90922c0a904cffc8.bindPopup(popup_c13cedd25fe341e788e20cc537c464bc);
+
+            
+        
+    
+            var circle_marker_f97245965a40486588cda1751d945eaa = L.circleMarker(
+                [56.0032695,12.291315398386567],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_853c16ce38264f299b5d92664863fd91 = L.popup({maxWidth: '300'});
+
+            
+                var html_d5cc4480a80c45c999ae5b637bbef99f = $('<div id="html_d5cc4480a80c45c999ae5b637bbef99f" style="width: 100.0%; height: 100.0%;">Gribskov</div>')[0];
+                popup_853c16ce38264f299b5d92664863fd91.setContent(html_d5cc4480a80c45c999ae5b637bbef99f);
+            
+
+            circle_marker_f97245965a40486588cda1751d945eaa.bindPopup(popup_853c16ce38264f299b5d92664863fd91);
+
+            
+        
+    
+            var circle_marker_a3bee845a3444e2eb34cffe457e84f11 = L.circleMarker(
+                [55.80105015,12.40902671807886],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_a1258a60f7b4474fbe1d83f6d688fc54 = L.popup({maxWidth: '300'});
+
+            
+                var html_29e274bff06147cdae1a259c27081fb0 = $('<div id="html_29e274bff06147cdae1a259c27081fb0" style="width: 100.0%; height: 100.0%;">Furesø</div>')[0];
+                popup_a1258a60f7b4474fbe1d83f6d688fc54.setContent(html_29e274bff06147cdae1a259c27081fb0);
+            
+
+            circle_marker_a3bee845a3444e2eb34cffe457e84f11.bindPopup(popup_a1258a60f7b4474fbe1d83f6d688fc54);
+
+            
+        
+    
+            var circle_marker_85497e2a988443edbd92a624b3787394 = L.circleMarker(
+                [55.9821565,12.395091144755735],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_f90a99aac6ab486eadf46344ec26e9fb = L.popup({maxWidth: '300'});
+
+            
+                var html_179c5a8c9f34418fbe9354b4544f214e = $('<div id="html_179c5a8c9f34418fbe9354b4544f214e" style="width: 100.0%; height: 100.0%;">Fredensborg</div>')[0];
+                popup_f90a99aac6ab486eadf46344ec26e9fb.setContent(html_179c5a8c9f34418fbe9354b4544f214e);
+            
+
+            circle_marker_85497e2a988443edbd92a624b3787394.bindPopup(popup_f90a99aac6ab486eadf46344ec26e9fb);
+
+            
+        
+    
+            var circle_marker_a7da3641c44a4f69a9d851b2a8e691c7 = L.circleMarker(
+                [55.6812495,12.4547294],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_f438705397e34fa5a7cd6108ee679fcc = L.popup({maxWidth: '300'});
+
+            
+                var html_1fe06f5a677b474d99411ee1874e65bb = $('<div id="html_1fe06f5a677b474d99411ee1874e65bb" style="width: 100.0%; height: 100.0%;">Rødovre</div>')[0];
+                popup_f438705397e34fa5a7cd6108ee679fcc.setContent(html_1fe06f5a677b474d99411ee1874e65bb);
+            
+
+            circle_marker_a7da3641c44a4f69a9d851b2a8e691c7.bindPopup(popup_f438705397e34fa5a7cd6108ee679fcc);
+
+            
+        
+    
+            var circle_marker_7fe661f16fa046098b59475273aa7a9e = L.circleMarker(
+                [55.143205449999996,14.922572149451753],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_997a669ea9d9428a91587e2effa3935c = L.popup({maxWidth: '300'});
+
+            
+                var html_7a1dbb38b2344ef4bd988d1466c97c52 = $('<div id="html_7a1dbb38b2344ef4bd988d1466c97c52" style="width: 100.0%; height: 100.0%;">Bornholm</div>')[0];
+                popup_997a669ea9d9428a91587e2effa3935c.setContent(html_7a1dbb38b2344ef4bd988d1466c97c52);
+            
+
+            circle_marker_7fe661f16fa046098b59475273aa7a9e.bindPopup(popup_997a669ea9d9428a91587e2effa3935c);
+
+            
+        
+    
+            var circle_marker_787904f2ebfe428dbd5ad2f0e5c8b872 = L.circleMarker(
+                [55.4470245,9.93699440734142],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_cd4e3ee5172f4836aa48a2f36f3bef95 = L.popup({maxWidth: '300'});
+
+            
+                var html_526664c28000484ab7db5a5ac8739ffc = $('<div id="html_526664c28000484ab7db5a5ac8739ffc" style="width: 100.0%; height: 100.0%;">Middelfart</div>')[0];
+                popup_cd4e3ee5172f4836aa48a2f36f3bef95.setContent(html_526664c28000484ab7db5a5ac8739ffc);
+            
+
+            circle_marker_787904f2ebfe428dbd5ad2f0e5c8b872.bindPopup(popup_cd4e3ee5172f4836aa48a2f36f3bef95);
+
+            
+        
+    
+            var circle_marker_2c28895426d048f19603476ce0a5a64c = L.circleMarker(
+                [57.36851645,9.523043987791542],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_f3b9b00515cd436bb41cd99a89be089a = L.popup({maxWidth: '300'});
+
+            
+                var html_efa807c8ec6048519fb6502522a0edce = $('<div id="html_efa807c8ec6048519fb6502522a0edce" style="width: 100.0%; height: 100.0%;">Jammerbugt</div>')[0];
+                popup_f3b9b00515cd436bb41cd99a89be089a.setContent(html_efa807c8ec6048519fb6502522a0edce);
+            
+
+            circle_marker_2c28895426d048f19603476ce0a5a64c.bindPopup(popup_f3b9b00515cd436bb41cd99a89be089a);
+
+            
+        
+    
+            var circle_marker_8d8e4d78de244e1b8dfd998c860a3a59 = L.circleMarker(
+                [56.4511784,10.60868882625472],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_b24a00ca80e44b9e9556fc443b1859e4 = L.popup({maxWidth: '300'});
+
+            
+                var html_364ad0e1e5bb47168ac6cb0eea2bba57 = $('<div id="html_364ad0e1e5bb47168ac6cb0eea2bba57" style="width: 100.0%; height: 100.0%;">Norddjurs</div>')[0];
+                popup_b24a00ca80e44b9e9556fc443b1859e4.setContent(html_364ad0e1e5bb47168ac6cb0eea2bba57);
+            
+
+            circle_marker_8d8e4d78de244e1b8dfd998c860a3a59.bindPopup(popup_b24a00ca80e44b9e9556fc443b1859e4);
+
+            
+        
+    
+            var circle_marker_02d74b11116e4d1390f02891ac410c74 = L.circleMarker(
+                [54.9395925,8.860309221520497],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_4a2cd695748d4f32b6dfa095ce6a778f = L.popup({maxWidth: '300'});
+
+            
+                var html_18388cca12eb432cb444151b6c6f8112 = $('<div id="html_18388cca12eb432cb444151b6c6f8112" style="width: 100.0%; height: 100.0%;">Tønder</div>')[0];
+                popup_4a2cd695748d4f32b6dfa095ce6a778f.setContent(html_18388cca12eb432cb444151b6c6f8112);
+            
+
+            circle_marker_02d74b11116e4d1390f02891ac410c74.bindPopup(popup_4a2cd695748d4f32b6dfa095ce6a778f);
+
+            
+        
+    
+            var circle_marker_15b8f92404ed43408d2345815f6a9212 = L.circleMarker(
+                [56.8245918,9.40566694634549],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_a12d941fa2b845df837c45050135649e = L.popup({maxWidth: '300'});
+
+            
+                var html_c41badc75d4541a49c4fb043911d8194 = $('<div id="html_c41badc75d4541a49c4fb043911d8194" style="width: 100.0%; height: 100.0%;">Vesthimmerland</div>')[0];
+                popup_a12d941fa2b845df837c45050135649e.setContent(html_c41badc75d4541a49c4fb043911d8194);
+            
+
+            circle_marker_15b8f92404ed43408d2345815f6a9212.bindPopup(popup_a12d941fa2b845df837c45050135649e);
+
+            
+        
+    
+            var circle_marker_e39dadf2007243f9a0e0876b909c429a = L.circleMarker(
+                [55.25592915,12.111935854483317],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_77fc07d710184520a7f2cdbfbef3863c = L.popup({maxWidth: '300'});
+
+            
+                var html_7f599cd9165443089b0e029fcc3eb8eb = $('<div id="html_7f599cd9165443089b0e029fcc3eb8eb" style="width: 100.0%; height: 100.0%;">Faxe</div>')[0];
+                popup_77fc07d710184520a7f2cdbfbef3863c.setContent(html_7f599cd9165443089b0e029fcc3eb8eb);
+            
+
+            circle_marker_e39dadf2007243f9a0e0876b909c429a.bindPopup(popup_77fc07d710184520a7f2cdbfbef3863c);
+
+            
+        
+    
+            var circle_marker_e3fae10befff4e7eab4b742b3973bdd6 = L.circleMarker(
+                [57.2700129,9.9448631],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_7cc6c3ec0d2749888f0a28f875d6011f = L.popup({maxWidth: '300'});
+
+            
+                var html_c2d3239f827248dfbd018c6de675bb0d = $('<div id="html_c2d3239f827248dfbd018c6de675bb0d" style="width: 100.0%; height: 100.0%;">Brønderslev</div>')[0];
+                popup_7cc6c3ec0d2749888f0a28f875d6011f.setContent(html_c2d3239f827248dfbd018c6de675bb0d);
+            
+
+            circle_marker_e3fae10befff4e7eab4b742b3973bdd6.bindPopup(popup_7cc6c3ec0d2749888f0a28f875d6011f);
+
+            
+        
+    
+            var circle_marker_d8881c696178422e88e31e7743282857 = L.circleMarker(
+                [55.644111,12.4217135],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_880ce1c3c9934a0eae9ba5b09cccdd06 = L.popup({maxWidth: '300'});
+
+            
+                var html_06a6939ee04a432d941d7b01cdaf259f = $('<div id="html_06a6939ee04a432d941d7b01cdaf259f" style="width: 100.0%; height: 100.0%;">Brøndby</div>')[0];
+                popup_880ce1c3c9934a0eae9ba5b09cccdd06.setContent(html_06a6939ee04a432d941d7b01cdaf259f);
+            
+
+            circle_marker_d8881c696178422e88e31e7743282857.bindPopup(popup_880ce1c3c9934a0eae9ba5b09cccdd06);
+
+            
+        
+    
+            var circle_marker_651f952790fc4dea9a5f47623430dc6d = L.circleMarker(
+                [55.446817,11.7975218],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_b547bfcd226242679cd48049d78575f1 = L.popup({maxWidth: '300'});
+
+            
+                var html_34519c75d3844ca7aa053ccd3dc63efa = $('<div id="html_34519c75d3844ca7aa053ccd3dc63efa" style="width: 100.0%; height: 100.0%;">Ringsted</div>')[0];
+                popup_b547bfcd226242679cd48049d78575f1.setContent(html_34519c75d3844ca7aa053ccd3dc63efa);
+            
+
+            circle_marker_651f952790fc4dea9a5f47623430dc6d.bindPopup(popup_b547bfcd226242679cd48049d78575f1);
+
+            
+        
+    
+            var circle_marker_9b6fee29670944ef9e88b5b38f9031ec = L.circleMarker(
+                [55.8717715,11.607236693553508],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_a0d738539d9545abba9448453bdad352 = L.popup({maxWidth: '300'});
+
+            
+                var html_47f21b3a772e41e9b98137cf8c166889 = $('<div id="html_47f21b3a772e41e9b98137cf8c166889" style="width: 100.0%; height: 100.0%;">Odsherred</div>')[0];
+                popup_a0d738539d9545abba9448453bdad352.setContent(html_47f21b3a772e41e9b98137cf8c166889);
+            
+
+            circle_marker_9b6fee29670944ef9e88b5b38f9031ec.bindPopup(popup_a0d738539d9545abba9448453bdad352);
+
+            
+        
+    
+            var circle_marker_550005603d854d2ea1337131c5097730 = L.circleMarker(
+                [55.3098281,10.7976604],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_ba2ae661a7724e26904a5aa517c651db = L.popup({maxWidth: '300'});
+
+            
+                var html_da491bad0d8a4a43894b582a8acd7ace = $('<div id="html_da491bad0d8a4a43894b582a8acd7ace" style="width: 100.0%; height: 100.0%;">Nyborg</div>')[0];
+                popup_ba2ae661a7724e26904a5aa517c651db.setContent(html_da491bad0d8a4a43894b582a8acd7ace);
+            
+
+            circle_marker_550005603d854d2ea1337131c5097730.bindPopup(popup_ba2ae661a7724e26904a5aa517c651db);
+
+            
+        
+    
+            var circle_marker_8c677d1ddf6a4f10b275d0e5750ca54d = L.circleMarker(
+                [55.9547901,11.897637594899628],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_1d3e094b07fe4cce82c1d0abc4693b2e = L.popup({maxWidth: '300'});
+
+            
+                var html_e4d0ba2edcbb4565a63cd0a7817c43cc = $('<div id="html_e4d0ba2edcbb4565a63cd0a7817c43cc" style="width: 100.0%; height: 100.0%;">Halsnæs</div>')[0];
+                popup_1d3e094b07fe4cce82c1d0abc4693b2e.setContent(html_e4d0ba2edcbb4565a63cd0a7817c43cc);
+            
+
+            circle_marker_8c677d1ddf6a4f10b275d0e5750ca54d.bindPopup(popup_1d3e094b07fe4cce82c1d0abc4693b2e);
+
+            
+        
+    
+            var circle_marker_21ab3a81e2f640f882fca77ef8530375 = L.circleMarker(
+                [56.83235445,9.849713578674315],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_70e7ac798f9446c6a53bcf8749ce4bff = L.popup({maxWidth: '300'});
+
+            
+                var html_c177feeffc1c49aea2e9719d18a6a543 = $('<div id="html_c177feeffc1c49aea2e9719d18a6a543" style="width: 100.0%; height: 100.0%;">Rebild</div>')[0];
+                popup_70e7ac798f9446c6a53bcf8749ce4bff.setContent(html_c177feeffc1c49aea2e9719d18a6a543);
+            
+
+            circle_marker_21ab3a81e2f640f882fca77ef8530375.bindPopup(popup_70e7ac798f9446c6a53bcf8749ce4bff);
+
+            
+        
+    
+            var circle_marker_1439cfd4d4f74c1d91cd43c5e70696a5 = L.circleMarker(
+                [55.4365822,11.5629363],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_644d2d51947c43bb979512af699bb4ca = L.popup({maxWidth: '300'});
+
+            
+                var html_85add113fde643d6b37039487ec0d67e = $('<div id="html_85add113fde643d6b37039487ec0d67e" style="width: 100.0%; height: 100.0%;">Sorø</div>')[0];
+                popup_644d2d51947c43bb979512af699bb4ca.setContent(html_85add113fde643d6b37039487ec0d67e);
+            
+
+            circle_marker_1439cfd4d4f74c1d91cd43c5e70696a5.bindPopup(popup_644d2d51947c43bb979512af699bb4ca);
+
+            
+        
+    
+            var circle_marker_e454a2a7e1544148a8c726d297e2e602 = L.circleMarker(
+                [55.51401385,10.238036534603797],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_b9c6450212014f4ab91ef8b030fc4572 = L.popup({maxWidth: '300'});
+
+            
+                var html_89ae54d1e15e4bc3a868f59b10a9f762 = $('<div id="html_89ae54d1e15e4bc3a868f59b10a9f762" style="width: 100.0%; height: 100.0%;">Nordfyn</div>')[0];
+                popup_b9c6450212014f4ab91ef8b030fc4572.setContent(html_89ae54d1e15e4bc3a868f59b10a9f762);
+            
+
+            circle_marker_e454a2a7e1544148a8c726d297e2e602.bindPopup(popup_b9c6450212014f4ab91ef8b030fc4572);
+
+            
+        
+    
+            var circle_marker_4770aab28a8749619937e2384a2e6d9c = L.circleMarker(
+                [55.733700600000006,12.429451266362797],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_7f5d39c7a9954c239ac39a0bcec7ce0e = L.popup({maxWidth: '300'});
+
+            
+                var html_1d83ebf7a86248a28783f72e3517436b = $('<div id="html_1d83ebf7a86248a28783f72e3517436b" style="width: 100.0%; height: 100.0%;">Herlev</div>')[0];
+                popup_7f5d39c7a9954c239ac39a0bcec7ce0e.setContent(html_1d83ebf7a86248a28783f72e3517436b);
+            
+
+            circle_marker_4770aab28a8749619937e2384a2e6d9c.bindPopup(popup_7f5d39c7a9954c239ac39a0bcec7ce0e);
+
+            
+        
+    
+            var circle_marker_f3a4727d0870408bb72fdd2eef820b53 = L.circleMarker(
+                [55.6586018,12.3562849],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_a033bd7032c64d38bc8c7be0a3502674 = L.popup({maxWidth: '300'});
+
+            
+                var html_9999f0d25fb644deb8e25905711d6365 = $('<div id="html_9999f0d25fb644deb8e25905711d6365" style="width: 100.0%; height: 100.0%;">Albertslund</div>')[0];
+                popup_a033bd7032c64d38bc8c7be0a3502674.setContent(html_9999f0d25fb644deb8e25905711d6365);
+            
+
+            circle_marker_f3a4727d0870408bb72fdd2eef820b53.bindPopup(popup_a033bd7032c64d38bc8c7be0a3502674);
+
+            
+        
+    
+            var circle_marker_41d82701353c4505a5fa6e9243c56c1c = L.circleMarker(
+                [55.6043432,11.9737103],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_6cab41b41acf45fa891324bdc0cd7d60 = L.popup({maxWidth: '300'});
+
+            
+                var html_028844bdbd3f4f089a532b7a830dc06c = $('<div id="html_028844bdbd3f4f089a532b7a830dc06c" style="width: 100.0%; height: 100.0%;">Lejre</div>')[0];
+                popup_6cab41b41acf45fa891324bdc0cd7d60.setContent(html_028844bdbd3f4f089a532b7a830dc06c);
+            
+
+            circle_marker_41d82701353c4505a5fa6e9243c56c1c.bindPopup(popup_6cab41b41acf45fa891324bdc0cd7d60);
+
+            
+        
+    
+            var circle_marker_259f3b4c24514d88a853b364860b3074 = L.circleMarker(
+                [55.7309428,9.1159357],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_c85cc0963359442a9f8b2b3834cd88b3 = L.popup({maxWidth: '300'});
+
+            
+                var html_e64bc53730de4dc69027d29e02bee9cf = $('<div id="html_e64bc53730de4dc69027d29e02bee9cf" style="width: 100.0%; height: 100.0%;">Billund</div>')[0];
+                popup_c85cc0963359442a9f8b2b3834cd88b3.setContent(html_e64bc53730de4dc69027d29e02bee9cf);
+            
+
+            circle_marker_259f3b4c24514d88a853b364860b3074.bindPopup(popup_c85cc0963359442a9f8b2b3834cd88b3);
+
+            
+        
+    
+            var circle_marker_c683a935ee8f40bcb4640ca36b6eafb4 = L.circleMarker(
+                [55.8707776,12.3556762],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_b8adb991255c4a509b080f43e48e3da1 = L.popup({maxWidth: '300'});
+
+            
+                var html_ba8522fdf8a7480bac3352324b196b89 = $('<div id="html_ba8522fdf8a7480bac3352324b196b89" style="width: 100.0%; height: 100.0%;">Allerød</div>')[0];
+                popup_b8adb991255c4a509b080f43e48e3da1.setContent(html_ba8522fdf8a7480bac3352324b196b89);
+            
+
+            circle_marker_c683a935ee8f40bcb4640ca36b6eafb4.bindPopup(popup_b8adb991255c4a509b080f43e48e3da1);
+
+            
+        
+    
+            var circle_marker_56e6f1eaf73e49d0a1eb004d0a7eaf9e = L.circleMarker(
+                [55.8832986,12.5000112],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_23439d2a614d47fcb464294421f76e4e = L.popup({maxWidth: '300'});
+
+            
+                var html_7bea81a47b8d4a728d0afa65b013a6fb = $('<div id="html_7bea81a47b8d4a728d0afa65b013a6fb" style="width: 100.0%; height: 100.0%;">Hørsholm</div>')[0];
+                popup_23439d2a614d47fcb464294421f76e4e.setContent(html_7bea81a47b8d4a728d0afa65b013a6fb);
+            
+
+            circle_marker_56e6f1eaf73e49d0a1eb004d0a7eaf9e.bindPopup(popup_23439d2a614d47fcb464294421f76e4e);
+
+            
+        
+    
+            var circle_marker_931fc8acbe4345d4ba8a0c9eae096e64 = L.circleMarker(
+                [55.4532771,10.6547783],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_9e3ab6fbd5ab45dfa1a01f59a4eaf8b3 = L.popup({maxWidth: '300'});
+
+            
+                var html_cdc35d3e8b1d4344b3d5ce886fd3dd9f = $('<div id="html_cdc35d3e8b1d4344b3d5ce886fd3dd9f" style="width: 100.0%; height: 100.0%;">Kerteminde</div>')[0];
+                popup_9e3ab6fbd5ab45dfa1a01f59a4eaf8b3.setContent(html_cdc35d3e8b1d4344b3d5ce886fd3dd9f);
+            
+
+            circle_marker_931fc8acbe4345d4ba8a0c9eae096e64.bindPopup(popup_9e3ab6fbd5ab45dfa1a01f59a4eaf8b3);
+
+            
+        
+    
+            var circle_marker_14569689eab146a680a291ace2d78bfc = L.circleMarker(
+                [55.537527850000004,12.169616752371903],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_e865a02768e04fb98164f6e05a5ec730 = L.popup({maxWidth: '300'});
+
+            
+                var html_f3c3594861b945ff88e6059cf761ef70 = $('<div id="html_f3c3594861b945ff88e6059cf761ef70" style="width: 100.0%; height: 100.0%;">Solrød</div>')[0];
+                popup_e865a02768e04fb98164f6e05a5ec730.setContent(html_f3c3594861b945ff88e6059cf761ef70);
+            
+
+            circle_marker_14569689eab146a680a291ace2d78bfc.bindPopup(popup_e865a02768e04fb98164f6e05a5ec730);
+
+            
+        
+    
+            var circle_marker_f5b816e18d8748f3be1186475b0a3162 = L.circleMarker(
+                [55.6094468,12.3582555],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_6bf1fdcfca554bd39798a541274af58d = L.popup({maxWidth: '300'});
+
+            
+                var html_fbb9f26177e448b2aa538aa8c774bf34 = $('<div id="html_fbb9f26177e448b2aa538aa8c774bf34" style="width: 100.0%; height: 100.0%;">Ishøj</div>')[0];
+                popup_6bf1fdcfca554bd39798a541274af58d.setContent(html_fbb9f26177e448b2aa538aa8c774bf34);
+            
+
+            circle_marker_f5b816e18d8748f3be1186475b0a3162.bindPopup(popup_6bf1fdcfca554bd39798a541274af58d);
+
+            
+        
+    
+            var circle_marker_087862ae30604308b82164c03dca314d = L.circleMarker(
+                [55.255478,12.382478],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_6127dca616be4057bef9c810506487c7 = L.popup({maxWidth: '300'});
+
+            
+                var html_4dbcba27027045bfb124efb96d42f648 = $('<div id="html_4dbcba27027045bfb124efb96d42f648" style="width: 100.0%; height: 100.0%;">Stevns</div>')[0];
+                popup_6127dca616be4057bef9c810506487c7.setContent(html_4dbcba27027045bfb124efb96d42f648);
+            
+
+            circle_marker_087862ae30604308b82164c03dca314d.bindPopup(popup_6127dca616be4057bef9c810506487c7);
+
+            
+        
+    
+            var circle_marker_e5a93827736647eca5416638cf8f7e2a = L.circleMarker(
+                [55.6835672,12.4128011280619],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_c4f5929346c84f4f8d3c453e33386fa1 = L.popup({maxWidth: '300'});
+
+            
+                var html_d64f0ef6f7774774ad7daa8d14da9207 = $('<div id="html_d64f0ef6f7774774ad7daa8d14da9207" style="width: 100.0%; height: 100.0%;">Glostrup</div>')[0];
+                popup_c4f5929346c84f4f8d3c453e33386fa1.setContent(html_d64f0ef6f7774774ad7daa8d14da9207);
+            
+
+            circle_marker_e5a93827736647eca5416638cf8f7e2a.bindPopup(popup_c4f5929346c84f4f8d3c453e33386fa1);
+
+            
+        
+    
+            var circle_marker_73f4ec370b3749188f09b008772c675d = L.circleMarker(
+                [55.975832,10.1513202],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_c9ff516594bf47528a4b97290e4170ac = L.popup({maxWidth: '300'});
+
+            
+                var html_bdaeeaab253a4b9e93352588c47e8559 = $('<div id="html_bdaeeaab253a4b9e93352588c47e8559" style="width: 100.0%; height: 100.0%;">Odder</div>')[0];
+                popup_c9ff516594bf47528a4b97290e4170ac.setContent(html_bdaeeaab253a4b9e93352588c47e8559);
+            
+
+            circle_marker_73f4ec370b3749188f09b008772c675d.bindPopup(popup_c9ff516594bf47528a4b97290e4170ac);
+
+            
+        
+    
+            var circle_marker_41d92aac91604795a117da43d01195df = L.circleMarker(
+                [56.4808237,8.6029318],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_702fde70155d4269a182f75072d0e2e8 = L.popup({maxWidth: '300'});
+
+            
+                var html_24b8ea5eeb654a82a2915ef46b98e8ba = $('<div id="html_24b8ea5eeb654a82a2915ef46b98e8ba" style="width: 100.0%; height: 100.0%;">Struer</div>')[0];
+                popup_702fde70155d4269a182f75072d0e2e8.setContent(html_24b8ea5eeb654a82a2915ef46b98e8ba);
+            
+
+            circle_marker_41d92aac91604795a117da43d01195df.bindPopup(popup_702fde70155d4269a182f75072d0e2e8);
+
+            
+        
+    
+            var circle_marker_c0e9f1cce7a94a939ae78908fe4fa2b4 = L.circleMarker(
+                [12.466667,9.666667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_1c6ffbda8a104fb1aaa6aadb5434e51b = L.popup({maxWidth: '300'});
+
+            
+                var html_4d25228721514fa6adaf44d6992fbc99 = $('<div id="html_4d25228721514fa6adaf44d6992fbc99" style="width: 100.0%; height: 100.0%;">Morsø</div>')[0];
+                popup_1c6ffbda8a104fb1aaa6aadb5434e51b.setContent(html_4d25228721514fa6adaf44d6992fbc99);
+            
+
+            circle_marker_c0e9f1cce7a94a939ae78908fe4fa2b4.bindPopup(popup_1c6ffbda8a104fb1aaa6aadb5434e51b);
+
+            
+        
+    
+            var circle_marker_ba42320e8bbb43c0bbfa20029278bfcc = L.circleMarker(
+                [56.5486971,8.3046456],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_5cac7700a5c146fea22711c4dbb4d3d1 = L.popup({maxWidth: '300'});
+
+            
+                var html_e24513bb2e7a41968adc8cacdd382721 = $('<div id="html_e24513bb2e7a41968adc8cacdd382721" style="width: 100.0%; height: 100.0%;">Lemvig</div>')[0];
+                popup_5cac7700a5c146fea22711c4dbb4d3d1.setContent(html_e24513bb2e7a41968adc8cacdd382721);
+            
+
+            circle_marker_ba42320e8bbb43c0bbfa20029278bfcc.bindPopup(popup_5cac7700a5c146fea22711c4dbb4d3d1);
+
+            
+        
+    
+            var circle_marker_3043b12baf4c43e39f243cf1fe982e5e = L.circleMarker(
+                [55.632181,12.37119799171908],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_edbb7d88868c49dfbd512f77465a3edc = L.popup({maxWidth: '300'});
+
+            
+                var html_8797176a22264cb4992b63b923252fd1 = $('<div id="html_8797176a22264cb4992b63b923252fd1" style="width: 100.0%; height: 100.0%;">Vallensbæk</div>')[0];
+                popup_edbb7d88868c49dfbd512f77465a3edc.setContent(html_8797176a22264cb4992b63b923252fd1);
+            
+
+            circle_marker_3043b12baf4c43e39f243cf1fe982e5e.bindPopup(popup_edbb7d88868c49dfbd512f77465a3edc);
+
+            
+        
+    
+            var circle_marker_9a8438a668ed416da093d16a7aba0155 = L.circleMarker(
+                [55.592487,12.6719953],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_69f605387a0e429e816e180126a13d14 = L.popup({maxWidth: '300'});
+
+            
+                var html_6e9ac43c5088498c9c29938ba46db5ca = $('<div id="html_6e9ac43c5088498c9c29938ba46db5ca" style="width: 100.0%; height: 100.0%;">Dragør</div>')[0];
+                popup_69f605387a0e429e816e180126a13d14.setContent(html_6e9ac43c5088498c9c29938ba46db5ca);
+            
+
+            circle_marker_9a8438a668ed416da093d16a7aba0155.bindPopup(popup_69f605387a0e429e816e180126a13d14);
+
+            
+        
+    
+            var circle_marker_cad196e975b9407aba44ee3ae6888a14 = L.circleMarker(
+                [54.94323035,10.777466619991792],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_ed43be18ce144a61b635bd5915e92b85 = L.popup({maxWidth: '300'});
+
+            
+                var html_08188dff0e73467db0f063c5b7dbc944 = $('<div id="html_08188dff0e73467db0f063c5b7dbc944" style="width: 100.0%; height: 100.0%;">Langeland</div>')[0];
+                popup_ed43be18ce144a61b635bd5915e92b85.setContent(html_08188dff0e73467db0f063c5b7dbc944);
+            
+
+            circle_marker_cad196e975b9407aba44ee3ae6888a14.bindPopup(popup_ed43be18ce144a61b635bd5915e92b85);
+
+            
+        
+    
+            var circle_marker_1923726dcd2f439fbdf2bf5b5ff29d71 = L.circleMarker(
+                [50.291048,2.7772211],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_83e3ec04c234447e92cc66778d0eb589 = L.popup({maxWidth: '300'});
+
+            
+                var html_a681655988564ae19ce8108f162884e3 = $('<div id="html_a681655988564ae19ce8108f162884e3" style="width: 100.0%; height: 100.0%;">Ærø</div>')[0];
+                popup_83e3ec04c234447e92cc66778d0eb589.setContent(html_a681655988564ae19ce8108f162884e3);
+            
+
+            circle_marker_1923726dcd2f439fbdf2bf5b5ff29d71.bindPopup(popup_83e3ec04c234447e92cc66778d0eb589);
+
+            
+        
+    
+            var circle_marker_5245e9ac395149d2b5890600da0b18c0 = L.circleMarker(
+                [55.88354305,10.61143170945013],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_a5ff756f7eb949708a0b82878db90c17 = L.popup({maxWidth: '300'});
+
+            
+                var html_796e81968d0f470e90e805d2e4540c4e = $('<div id="html_796e81968d0f470e90e805d2e4540c4e" style="width: 100.0%; height: 100.0%;">Samsø</div>')[0];
+                popup_a5ff756f7eb949708a0b82878db90c17.setContent(html_796e81968d0f470e90e805d2e4540c4e);
+            
+
+            circle_marker_5245e9ac395149d2b5890600da0b18c0.bindPopup(popup_a5ff756f7eb949708a0b82878db90c17);
+
+            
+        
+    
+            var circle_marker_cbb1751a86e946f9b206a7ea8821d36d = L.circleMarker(
+                [55.40483125,8.425016939396738],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_8daccc54e461487581ba0c7b9a8d071b = L.popup({maxWidth: '300'});
+
+            
+                var html_47d2b567e79b454288bee3356be48de0 = $('<div id="html_47d2b567e79b454288bee3356be48de0" style="width: 100.0%; height: 100.0%;">Fanø</div>')[0];
+                popup_8daccc54e461487581ba0c7b9a8d071b.setContent(html_47d2b567e79b454288bee3356be48de0);
+            
+
+            circle_marker_cbb1751a86e946f9b206a7ea8821d36d.bindPopup(popup_8daccc54e461487581ba0c7b9a8d071b);
+
+            
+        
+    
+            var circle_marker_a7e9c993a4c541839f092b953e3c6a89 = L.circleMarker(
+                [57.271898,10.992758220967776],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_04d9637d160a4fba9a15df063f11374b);
+            
+    
+            var popup_f40e51d916bc4312aae7377b06b2fbd6 = L.popup({maxWidth: '300'});
+
+            
+                var html_5c804836469c40a58a2e875b6c1e3a50 = $('<div id="html_5c804836469c40a58a2e875b6c1e3a50" style="width: 100.0%; height: 100.0%;">Læsø</div>')[0];
+                popup_f40e51d916bc4312aae7377b06b2fbd6.setContent(html_5c804836469c40a58a2e875b6c1e3a50);
+            
+
+            circle_marker_a7e9c993a4c541839f092b953e3c6a89.bindPopup(popup_f40e51d916bc4312aae7377b06b2fbd6);
+
+            
+        
+</script>
