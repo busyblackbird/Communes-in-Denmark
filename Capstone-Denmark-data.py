@@ -1,12 +1,34 @@
+# Analyis if communes in Denmark: finding a new home
+# Olga Rodenko
+# updated 15-08-2020
+
 # -*- coding: utf-8 -*-
+
+# import libraries
 import numpy as np # library to handle data in a vectorized manner
 
 import pandas as pd # library for data analsysis
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
-print('Libraries imported.')
-
 import lxml
+
+import json # library to handle JSON files
+
+import requests # library to handle requests
+from pandas.io.json import json_normalize # tranform JSON file into a pandas dataframe
+
+# Matplotlib and associated plotting modules
+import matplotlib.cm as cm
+import matplotlib.colors as colors
+
+# import k-means from clustering stage
+from sklearn.cluster import KMeans
+
+import folium # map rendering library
+import os
+import matplotlib.pyplot as plt
+
+# 1. Getting the data
 
 df=pd.read_html("https://da.wikipedia.org/wiki/Kommuner_i_Danmark_efter_indbyggertal")[0]
 
@@ -29,19 +51,7 @@ df['location'] = df['Navn'].apply(geocode)
 df['point'] = df['location'].apply(lambda loc: tuple(loc.point) if loc else None)
 df[['latitude', 'longitude', 'altitude']] = pd.DataFrame(df['point'].tolist(), index=df.index)
 
-import json # library to handle JSON files
-
-import requests # library to handle requests
-from pandas.io.json import json_normalize # tranform JSON file into a pandas dataframe
-
-# Matplotlib and associated plotting modules
-import matplotlib.cm as cm
-import matplotlib.colors as colors
-
-# import k-means from clustering stage
-from sklearn.cluster import KMeans
-
-import folium # map rendering library
+# Using geocoder, create a map of Denmark
 
 address = 'Denmark'
 
@@ -71,6 +81,7 @@ for lat, lng, commune in zip(df['latitude'], df['longitude'], df['Navn']):
 #map_denmark
 map_denmark.save("map_denmark.html")
 
+# zoom into Copenhagen
 address = 'Copenhagen'
 
 geolocator = Nominatim(user_agent="copenhagen_explorer")
@@ -78,7 +89,7 @@ location = geolocator.geocode(address)
 cph_latitude = location.latitude
 cph_longitude = location.longitude
 
-# create map of Denmark using latitude and longitude values
+# create map of Copenhagen using latitude and longitude values
 map_cph = folium.Map(location=[cph_latitude, cph_longitude], zoom_start=10)
 
 # add markers to map
@@ -97,7 +108,7 @@ for lat, lng, commune in zip(df['latitude'], df['longitude'], df['Navn']):
     
 map_cph.save("map_cph.html")
 
-import os
+# Foursquare credentials
 
 CLIENT_ID = os.environ.get('CLIENT_ID') # your Foursquare ID
 CLIENT_SECRET = os.environ.get('CLIENT_SECRET') # your Foursquare Secret
@@ -165,9 +176,8 @@ Denmark_venues = getNearbyVenues(names=df['Navn'],
 
 Denmark_venues['Neighborhood'].value_counts()
 
+# plot: number of venues in each commune (limit is defined)
 Denmark_venues['Neighborhood'].value_counts().plot.barh(figsize=(20,20))
-#plt.barh(Denmark_venues['Neighborhood'].value_counts(), width=100)
-#plt.figure(figsize=(100,100))
 
 dfcount=Denmark_venues.groupby('Neighborhood').count()
 
@@ -183,7 +193,8 @@ Denmark_venues.drop(Denmark_venues[cond].index, inplace = True)
 
 print('There are {} unique categories.'.format(len(Denmark_venues['Venue Category'].unique())))
 
-# Analysis of each commune
+# 2. Analysis of each commune
+
 # one hot encoding
 dk_onehot = pd.get_dummies(Denmark_venues[['Venue Category']], prefix="", prefix_sep="")
 
@@ -243,6 +254,7 @@ for ind in np.arange(dk_grouped.shape[0]):
 com_venues_sorted.head()
 
 # 3. Clustering
+
 from yellowbrick.cluster import KElbowVisualizer
 # Instantiate the clustering model and visualizer
 model = KMeans()
@@ -267,7 +279,7 @@ visualizer.show()        # Finalize and render the figure
 com_venues_sorted.insert(0, 'Cluster Labels', kmeans.labels_)
 dk_cluster = df
 
-# merge toronto_grouped with toronto_data to add latitude/longitude for each neighborhood
+# merge to add latitude/longitude for each neighborhood
 dk_cluster = dk_cluster.join(com_venues_sorted.set_index('Neighborhood'), on='Navn')
 dk_cluster.drop(['Nr.', 'location', 'point','2019', 'indb/km2','2019','altitude', 'Km2'], axis=1, inplace=True)
 dk_cluster.head() # check the last columns!
@@ -277,11 +289,10 @@ dk_cluster.head()
 
 dk_cluster['Cluster Labels'] = dk_cluster['Cluster Labels'].astype('int')
 
+# plot: Most common venues in each cluster
 dk_cluster['1st Most Common Venue'].hist(by=dk_cluster['Cluster Labels'])
-dk_cluster.rename(columns={"1st Most Common Venue": "case_status"}, inplace=True)
 
-#dk_cluster['1st Most Common Venue'].barh(by=dk_cluster['Cluster Labels'])
-dk_cluster.groupby('Cluster Labels').case_status.value_counts().unstack(0).plot.bar()
+dk_cluster.rename(columns={"1st Most Common Venue": "case_status"}, inplace=True)
 
 group=dk_cluster.groupby('Cluster Labels').case_status.value_counts().to_frame()
 group.rename(columns={"case_status": "nr"}, inplace=True)
@@ -289,41 +300,19 @@ group.reset_index(inplace = True)
 
 group.head()
 
-group.groupby('case_status').count().plot.bar()
-
-#dfl = dk_cluster.groupby(['Cluster Labels'])['case_status'].value_counts()
+# plot: number of unique venues in each cluster
 dfl = group.groupby(['Cluster Labels'])['case_status'].count()
-
-
 dfl.plot.bar()
-#group.groupby('case_status').count().plot.bar()
 
-import matplotlib.pyplot as plt
-# plot data
-fig, ax = plt.subplots(figsize=(15,7))
-# use unstack()
-group.groupby(['Cluster Labels']).count().unstack().plot.bar(ax=ax)
-
-# Number of unique
-import matplotlib.pyplot as plt
+# plot: Number of unique 1st most common venues
 dk_cluster.groupby('Cluster Labels')['case_status'].nunique().plot(kind='bar')
 #dk_cluster.groupby('Cluster Labels')['case_status'].plot(kind='bar')
 #plt.show()
-
 plt.title('Number of unique 1st most common venues') # add a title to the histogram
-#plt.ylabel('Number of Countries') # add y-label
 plt.xlabel('Cluster label') # add x-label
 
-import seaborn as sns
-
-sns.catplot(x = "Cluster Labels",       # x variable name
-            y = "nr",       # y variable name
-            hue = "case_status",  # elements in each group variable name
-            data = group,     # dataframe to plot
-            kind = "bar")
-
+# plot: Number of venues for each cluster
 group.groupby('Cluster Labels').plot(kind='barh',x='case_status',y='nr')
-
 plt.title('Number of 1st most common venues in cluster') # add a title to the histogram
 plt.ylabel('1st most common venue') # add y-label
 #plt.xlabel('Cluster label') # add x-label
@@ -393,7 +382,8 @@ map_clusters.save("map_clusters_cph.html")
 
 dk_cluster.loc[dk_cluster['Cluster Labels'] == 0, dk_cluster.columns[[0] + list(range(5, dk_cluster.shape[1]))]]
 
-################3
+################
+
 # Data from Statistikbanken
 
 dfp = pd.read_csv("private-2.csv", header = None)
@@ -466,6 +456,7 @@ scaled_df.head()
 robust_scaled_df.head()
 
 # Cloropleth
+
 dk_geo = r'kommuner2.json' # geojson file
 # Remember the encoding
 # https://github.com/Neogeografen/dagi/blob/master/geojson/kommuner.geojson
