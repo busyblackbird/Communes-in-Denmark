@@ -6,8 +6,8 @@ The clusters are visualized using Folium.
 Data from Statistikbanken is used to analyze the communes further and the results are visualized using Cloropleth.
 
 See
-1. [Capstone-Denmark-data.py](../Capstone-Denmark-data.py) for the code
-2. [Analysis-of-communes-in-Denmark-presentation.pdf](../Analysis-of-communes-in-Denmark-presentation.pdf) for the presentation.
+1. [Capstone-Denmark-data.py](Capstone-Denmark-data.py) for the code
+2. [Analysis-of-communes-in-Denmark-presentation.pdf](Analysis-of-communes-in-Denmark-presentation.pdf) for the presentation.
 
 References used:
 1.	Wikipedia page 
